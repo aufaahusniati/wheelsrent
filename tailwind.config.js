@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
@@ -7,10 +7,20 @@ export default {
     "./node_modules/flowbite/**/*.js"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#0174BE',
+        secondary: '#D2DE32',
+      },
+      screens: {
+        '2xl' : '1320px'
+      },
+      fontFamily : {
+        poppins : "'poppins'"
+      }
+    },
   },
   plugins: [
-    require('flowbite/plugin')
+      require('flowbite/plugin')
   ],
 }
-
