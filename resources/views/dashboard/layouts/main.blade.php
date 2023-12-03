@@ -16,6 +16,14 @@
 {{-- Sidebar --}}
 @include('dashboard.layouts.sidebar')
 {{-- End Sidebar --}}
+
+{{-- navbar --}}
+@include('dashboard.layouts.navbar')
+{{-- End Navbar --}}
+
+{{-- Content --}}
+@include('dashboard.layouts.content')
+{{-- End Content --}}
    
   
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
