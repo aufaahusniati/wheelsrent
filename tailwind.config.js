@@ -17,6 +17,9 @@ module.exports = {
         secondary: '#D2DE32',
         dark: '#0f172a',
       },
+      fontFamily: {
+        ponppins :"'ponppins'"
+      },
       screens: {
         '2xl' : '1320px'
       },
