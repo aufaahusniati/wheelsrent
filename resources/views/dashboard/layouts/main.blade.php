@@ -23,11 +23,6 @@
     </div>
     {{-- End Sidebar --}}
     
-    {{-- main dashboard --}}
-    
-    
-    {{-- End main dashboard --}}
-    
     {{-- Content --}}
     <main class=" w-[calc(100%-256px)] min-h-screen ml-64 bg-gray-50">
         @yield('container')  
