@@ -6,7 +6,7 @@ use App\Models\Post;
 use Illuminate\Http\Request;
 
 
-class DashboardPostController extends Controller
+class DashboardMobilController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -21,7 +21,7 @@ class DashboardPostController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.posts.create');
     }
 
     /**

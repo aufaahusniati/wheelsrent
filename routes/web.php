@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\DashboardPostController;
+use App\Http\Controllers\DashboardMobilController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,4 +22,4 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::resource('/dashboard/posts', DashboardPostController::class);
+Route::resource('/dashboard/posts', DashboardMobilController::class);
