@@ -37,7 +37,7 @@ class DashboardMobilController extends Controller
     //  */
     public function show()
     {
-        //
+        return view('dashboard.posts.edit');
     }
 
     // /**
