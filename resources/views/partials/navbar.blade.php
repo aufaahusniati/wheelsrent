@@ -13,10 +13,10 @@
                         <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                     </button>
                     
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none" >
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none lg:opacity-100" >
                         <ul class="block lg:flex">
                             <li class="group">
-                                <a href="#beranda" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary">Beranda</a>
+                                <a href="#beranda" class="text-base font-bold text-dark decoration-dark py-2 mx-8 flex group-hover:text-primary">Beranda</a>
                             </li>
                             <li class="group">
                                 <a href="#tentang" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary">Tentang Kami</a>
@@ -25,7 +25,7 @@
                                 <a href="#mobil" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary">Jenis Mobil</a>
                             </li>
                             <li class="group my-1 mx-10 lg:my-0 lg:mx-4">
-                                <button type="button" class="py-2 px-8 me-2 mb-2 font-base font-extrabold text-primary focus:outline-none bg-white rounded-full border-2 border-primary hover:bg-primary hover:text-white focus:z-10 focus:ring-4 focus:ring-white dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Reservasi</button>
+                                <button type="button" class="py-2 px-8 me-2 mb-2 font-base font-extrabold text-primary  focus:outline-none bg-white rounded-full border-2 border-primary hover:bg-primary hover:text-white focus:z-10 focus:ring-4 focus:ring-white dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Reservasi</button>
                             </li>
                             <li class="group mx-10 lg:mx-[-10px]">
                                 <button type="button" class="inline-flex items-center px-8 py-2 font-base font-extrabold text-white bg-primary rounded-full border-2 border-primary hover:bg-white hover:text-primary focus:z-10 focus:ring-2 focus:ring-primary focus:text-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
