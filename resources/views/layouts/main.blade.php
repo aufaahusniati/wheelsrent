@@ -16,9 +16,7 @@
 <body>
     @include('partials.navbar')
     
-    <div class="container mt-4">
         @yield('container')
-    </div>
 </body>
 <script src="/js/script.js"></script>
 </html>
