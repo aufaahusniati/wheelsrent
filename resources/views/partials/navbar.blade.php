@@ -25,7 +25,7 @@
                                 <a href="#mobil" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary">Jenis Mobil</a>
                             </li>
                             <li class="group my-1 mx-10 lg:my-0 lg:mx-4">
-                                <button type="button" class="py-2 px-8 me-2 mb-2 font-base font-extrabold text-primary  focus:outline-none bg-white rounded-full border-2 border-primary hover:bg-primary hover:text-white focus:z-10 focus:ring-4 focus:ring-white dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Reservasi</button>
+                                <button type="button" class="py-2 px-8 me-2 mb-2 font-base font-extrabold text-primary  focus:outline-none bg-white rounded-full border-2 border-primary hover:bg-primary hover:text-white focus:z-10 focus:ring-4 focus:ring-white">Reservasi</button>
                             </li>
                             <li class="group mx-10 lg:mx-[-10px]">
                                 <a href="/login">
