@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class DashboardMobilController extends Controller
 {
+    
     /**
      * Display a listing of the resource.
      */
@@ -17,6 +18,7 @@ class DashboardMobilController extends Controller
     }
 
     /**
+     * 
      * Show the form for creating a new resource.
      */
     public function create()
@@ -36,16 +38,16 @@ class DashboardMobilController extends Controller
     //  * Display the specified resource.
     //  */
     public function show()
-    {
+     {
         return view('dashboard.posts.edit');
-    }
+     }
 
     // /**
     //  * Show the form for editing the specified resource.
     //  */
-    // public function edit(Post $post)
+    // public function edit()
     // {
-    //     //
+    //     return view('dashboard.posts.edit');
     // }
 
     // /**
