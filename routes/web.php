@@ -3,6 +3,7 @@
 use App\Http\Controllers\DashboardMobilController;
 use App\Http\Controllers\DashboardSewaController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -25,6 +26,9 @@ Route::get('/', function () {
 
 // Login
 Route::get('/login', [LoginController::class, 'index']);
+
+// Register
+Route::get('/register', [RegisterController::class, 'index']);
 
 // Dashboard
 Route::get('/dashboard', function () {

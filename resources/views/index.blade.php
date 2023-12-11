@@ -1,7 +1,6 @@
 @extends('layouts.main')
 
 @section('container')
-
     <!-- Hero Section Start -->
     <section id="home" class="pt-36">
         <div class="container">
