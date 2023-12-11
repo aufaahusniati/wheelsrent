@@ -14,9 +14,12 @@
     <title>WheelsRent</title>
 </head>
 <body>
+
     @include('partials.navbar')
-    
+
+    <div class="flex justify-center mt-56 ">
         @yield('container')
+      </div>
 </body>
 <script src="/js/script.js"></script>
 </html>

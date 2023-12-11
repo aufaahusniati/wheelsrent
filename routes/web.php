@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\DashboardMobilController;
+use App\Http\Controllers\DashboardSewaController;
+use App\Http\Controllers\LoginController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,12 +17,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/dashboard', function () {
-    return view('dashboard.index');
-});
+
 
 Route::get('/', function () {
     return view('index');
 });
 
+// Login
+Route::get('/login', [LoginController::class, 'index']);
+
+// Dashboard
+Route::get('/dashboard', function () {
+    return view('dashboard.index');
+});
 Route::resource('/dashboard/posts', DashboardMobilController::class);
+Route::resource('/dashboard/sewa', DashboardSewaController::class);

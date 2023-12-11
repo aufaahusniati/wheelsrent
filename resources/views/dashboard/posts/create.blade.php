@@ -3,9 +3,16 @@
 @section('container')
 <div class="flex items-center justify-between py-10 mt-7 px-10">
     <h1 class="font-poppins text-5xl font-semibold">Create Mobil</h1>
+
+    <a href="/dashboard/posts" >
+      <button type="submit" class="font-semibold hover:text-white border border-primary hover:bg-red-400 focus:ring-4 focus:outline-none
+      focus:ring-red-400 rounded-lg text-md px-14 py-2.5 mt-5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white
+      dark:hover:bg-blue-500 dark:focus:ring-blue-800"> < Kembali</button>
+    </a>
+  </div>
 </div>
 
-<div class="">
+<div class="mt-24">
     <form method="post" action="/dashboard/posts" class="pl-72 mx-28" enctype="multipart/form-data">
         @csrf
         {{-- tipe --}}
@@ -79,15 +86,33 @@
           </div>
           {{-- End Bahan Bakar --}}
 
-          {{-- Button --}}
-          <a href="/dashboard/posts/create">
-            <button type="submit" class="font-semibold hover:text-white border border-primary hover:bg-primary focus:ring-4 focus:outline-none
-             focus:ring-blue-300 rounded-lg text-md px-14 py-2.5 mt-5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white
-             dark:hover:bg-blue-500 dark:focus:ring-blue-800">+ Tambahkan Data Baru</button>
-          </a>
-          {{-- End Button --}}
+          {{-- Hrga --}}
+          <div class="mb-4 ">
+            <label for="title" class="form-label text-2xl">Harga</label>
+            <input type="text" class="form-control ml-24 rounded-lg shadow-lg shadow-gray-700 
+            @error('title') is-invalid @enderror" placeholder="Rp. ..."
+            id="title" name="title" required autofocus value="">
+            @error('title')
+                  <div class="invalid-feedback">
+                    {{ $message}}
+                  </div>
+              @enderror
+          </div>
+          {{-- End Harga --}}
 
+          {{-- Button --}}
+          <div class=" class=pl-72 mx-28">
+            <a href="/dashboard/posts/create">
+              <button type="submit" class="font-semibold hover:text-white border border-primary hover:bg-primary focus:ring-4 focus:outline-none
+              focus:ring-blue-300 rounded-lg text-md px-14 py-2.5 mt-5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white
+              dark:hover:bg-blue-500 dark:focus:ring-blue-800">+ Tambahkan Data Baru</button>
+            </a>
+
+            
+
+          {{-- End Button --}}
     </form>
+    
 </div>
 
 <script>
