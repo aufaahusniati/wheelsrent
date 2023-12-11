@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DashboardMobilController;
+use App\Http\Controllers\DashboardSewaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,3 +24,4 @@ Route::get('/', function () {
 });
 
 Route::resource('/dashboard/posts', DashboardMobilController::class);
+Route::resource('/dashboard/sewa', DashboardSewaController::class);
