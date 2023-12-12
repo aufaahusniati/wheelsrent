@@ -13,9 +13,8 @@
 
     <title>WheelsRent</title>
 </head>
-    <body>
-        @include('partials.navbar')
-            @yield('container')
-    </body>
+<body>
+        @yield('container')
+</body>
 <script src="/js/script.js"></script>
 </html>
