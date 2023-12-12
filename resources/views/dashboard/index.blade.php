@@ -17,20 +17,20 @@
                     </div>
                 </div>
             </a> --}}
-            <a href="">
+            <a href="/dashboard/posts">
                 <div class=" bg-white border-x-4 border-y-4 rounded-xl hover:bg-gray-100  border-primary border-opacity-50 shadow-2xl shadow-gray-800">
                     <span class="text-3xl font-poppins font-semibold pl-6 ">10</span>
                     <div class="flex justify-between">
-                        <p class=" pt-16 pl-6 font-poppins font-bold text-3xl">Mobil</p>
+                        <p class=" pt-16 pl-6 font-poppins font-bold text-3xl">Car</p>
                         <img src= "/img/icon_car.png" class=" w-28 h-28" alt="mobil">              
                     </div>
                 </div>
             </a>
-            <a href="">
+            <a href="/dashboard/sewa">
                 <div class="bg-white border-x-4 border-y-4 rounded-xl hover:bg-gray-100  border-primary border-opacity-50  shadow-2xl shadow-gray-800">
                     <span class="text-3xl font-poppins font-semibold pl-6 ">15</span>
                     <div class="flex justify-between">
-                        <p class=" pt-16 pl-6 font-poppins font-bold text-3xl">Sewa</p>
+                        <p class=" pt-16 pl-6 font-poppins font-bold text-3xl">Rent</p>
                         <img src= "/img/icon_sewa.png" class=" w-28 h-28" alt="sewa">              
                     </div>
                 </div>

@@ -2,24 +2,24 @@
 
 @section('container')
 <div class="flex items-center justify-between py-10 mt-7 px-10">
-    <h1 class="font-poppins text-5xl font-semibold">Create Mobil</h1>
+    <h1 class="font-poppins text-5xl font-semibold">Create Car</h1>
 
     <a href="/dashboard/posts" >
       <button type="submit" class="font-semibold hover:text-white border border-primary hover:bg-red-400 focus:ring-4 focus:outline-none
       focus:ring-red-400 rounded-lg text-md px-14 py-2.5 mt-5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white
-      dark:hover:bg-blue-500 dark:focus:ring-blue-800"> < Kembali</button>
+      dark:hover:bg-blue-500 dark:focus:ring-blue-800"> < Back</button>
     </a>
   </div>
 </div>
 
-<div class="mt-24">
+<div class="flex flex-wrap items-center mt-5">
     <form method="post" action="/dashboard/posts" class="pl-72 mx-28" enctype="multipart/form-data">
         @csrf
         {{-- tipe --}}
         <div class="mb-4 ">
-          <label for="title" class="form-label text-2xl">Tipe </label>
-          <input type="text" class="form-control ml-28 rounded-lg shadow-lg shadow-gray-700 
-          @error('title') is-invalid @enderror" placeholder="Honda Cr-v"
+          <label for="title" class="form-label text-2xl">Make </label>
+          <input type="text" class="form-control ml-[93px] rounded-lg shadow-lg shadow-gray-700 
+          @error('title') is-invalid @enderror" placeholder="Honda"
           id="title" name="title" required autofocus value="">
           @error('title')
                 <div class="invalid-feedback">
@@ -31,9 +31,9 @@
 
         {{-- jenis mobil --}}
         <div class="mb-4 ">
-          <label for="title" class="form-label text-2xl">Jenis Mobil</label>
-          <input type="text" class="form-control ml-10 rounded-lg shadow-lg shadow-gray-700 
-          @error('title') is-invalid @enderror" placeholder="Sedan.."
+          <label for="title" class="form-label text-2xl">Model</label>
+          <input type="text" class="form-control ml-[89px] rounded-lg shadow-lg shadow-gray-700 
+          @error('title') is-invalid @enderror" placeholder="civic"
           id="title" name="title" required autofocus value="">
           @error('title')
                 <div class="invalid-feedback">
@@ -44,9 +44,9 @@
         {{--End Jenis Mobil  --}}
 
         {{-- Tahun --}}
-        <div class="mb-4 ">
-          <label for="title" class="form-label text-2xl">Tahun</label>
-          <input type="text" class="form-control ml-24 rounded-lg shadow-lg shadow-gray-700 
+        <div class="mb-4">
+          <label for="title" class="form-label text-2xl">Years</label>
+          <input type="text" class="form-control  rounded-lg ml-24 first-letter:rounded-lg shadow-lg shadow-gray-700 
           @error('title') is-invalid @enderror" placeholder="2019"
           id="title" name="title" required autofocus value="">
           @error('title')
@@ -60,7 +60,7 @@
         {{-- Transmision --}}
         <div class="mb-3">
             <label for="title" class="form-label text-2xl">Tansmission</label>
-            <select class="form-select rounded-lg shadow-lg shadow-gray-700 ml-5" name="category_id">
+            <select class="form-select rounded-lg shadow-lg shadow-gray-700 ml-4" name="category_id">
                 {{-- @foreach ($categories as $category)
                 @if (old('category_id') == $category->id)     
                 <option value="{{ $category->id }}" selected>{{ $category->name }}</option>
@@ -74,8 +74,8 @@
 
           {{-- Bahan Bakar --}}
           <div class="mb-4 ">
-            <label for="title" class="form-label text-2xl">Bahan Bakar</label>
-            <input type="text" class="form-control ml-5 rounded-lg shadow-lg shadow-gray-700 
+            <label for="title" class="form-label text-2xl">Flue</label>
+            <input type="text" class="form-control ml-28 rounded-lg shadow-lg shadow-gray-700 
             @error('title') is-invalid @enderror" placeholder="Disel.."
             id="title" name="title" required autofocus value="">
             @error('title')
@@ -88,8 +88,8 @@
 
           {{-- Hrga --}}
           <div class="mb-4 ">
-            <label for="title" class="form-label text-2xl">Harga</label>
-            <input type="text" class="form-control ml-24 rounded-lg shadow-lg shadow-gray-700 
+            <label for="title" class="form-label text-2xl">Price</label>
+            <input type="text" class="form-control ml-[103px] rounded-lg shadow-lg shadow-gray-700 
             @error('title') is-invalid @enderror" placeholder="Rp. ..."
             id="title" name="title" required autofocus value="">
             @error('title')
@@ -101,11 +101,11 @@
           {{-- End Harga --}}
 
           {{-- Button --}}
-          <div class=" class=pl-72 mx-28">
+          <div class="">
             <a href="/dashboard/posts/create">
               <button type="submit" class="font-semibold hover:text-white border border-primary hover:bg-primary focus:ring-4 focus:outline-none
               focus:ring-blue-300 rounded-lg text-md px-14 py-2.5 mt-5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white
-              dark:hover:bg-blue-500 dark:focus:ring-blue-800">+ Tambahkan Data Baru</button>
+              dark:hover:bg-blue-500 dark:focus:ring-blue-800">+ Create</button>
             </a>
 
             
