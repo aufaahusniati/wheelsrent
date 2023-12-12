@@ -2,14 +2,15 @@
 
 @section('container')
 <div class="flex items-center justify-between py-10 mt-5 px-10">
-    <h1 class="font-poppins text-5xl font-semibold">Daftar Mobil</h1>
+    <h1 class="font-poppins text-5xl font-semibold">Data Car</h1>
 </div>
 
 {{-- head table --}}
-<div class="relative px-24 overflow-x-auto  shadow-md sm:rounded-lg">
+<div class="relative px-24 overflow-x-auto shadow-md sm:rounded-lg">
     <a href="/dashboard/posts/create">
-    <button type="submit" class=" font-semibold hover:text-white border-2 border-primary hover:bg-primary focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white
-     dark:hover:bg-blue-500 dark:focus:ring-blue-800">+ Tambah Data</button>
+    <button type="submit" class=" font-semibold hover:text-white border-2 border-primary hover:bg-primary focus:ring-4 focus:outline-none 
+    focus:ring-blue-300 rounded-lg text-md px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white
+     dark:hover:bg-blue-500 dark:focus:ring-blue-800">+ Create New Data</button>
     </a>
     <table class="w-full text-xl text-center rtl:text-right font-ponppins text-black dark:text-white border-x-2 border-y-2 border-black">
         <thead class="text-base font-ponppins border-b-2 border-black text-black uppercase bg-primary bg-opacity-70 dark:bg-gray-700 dark:text-gray-400">
@@ -18,25 +19,25 @@
                     id
                 </th>
                 <th scope="col" class="px-6 py-3 border-black border-2">
-                    Gambar
+                    Images
                 </th>
                 <th scope="col" class="px-6 py-3 border-black border-2">
-                    Tipe
+                    Make
                 </th>
                 <th scope="col" class="px-6 py-3 border-black border-2">
-                    Jenis Mobil
+                    Model
                 </th>
                 <th scope="col" class="px-6 py-3 border-black border-2">
-                    Tahun
+                    Years
                 </th>
                 <th scope="col" class="px-6 py-3 border-black border-2">
                     Transmission
                 </th>
                 <th scope="col" class="px-6 py-3 border-black border-2">
-                    Bahan Bakar
+                    Fuel
                 </th>
                 <th scope="col" class="px-6 py-3 border-black border-2">
-                    Harga
+                    Price
                 </th>
                 
                 <th scope="col" class="px-6 py-3 text-center">
@@ -56,10 +57,10 @@
                     cr-v. jpeg
                 </td>
                 <td class="border-black border-2">
-                    honda cr-v
+                    Honda
                 </td>
                 <td class="border-black border-2">
-                    sedan
+                    Civis
                 </td>
                 <td class="border-black border-2">
                     2020
@@ -71,7 +72,7 @@
                     Bensi
                 </td>
                 <td class="border-black border-2">
-                    Rp. 350.000
+                    IDR. 350.000
                 </td>
                 
                 {{-- icons --}}
