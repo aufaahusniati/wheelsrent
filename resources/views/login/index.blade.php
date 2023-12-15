@@ -13,22 +13,23 @@
                         <h5 class="text-3xl font-bold text-center border-b-2 pb-3 text-gray-900">Login</h5>
                         <div>
                             <label for="email"></label>
-                            <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Email" required>
+                            <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Email" >
                         </div>
                         <div>
                             <label for="password"></label>
-                            <input type="password" name="password" id="password" placeholder="Password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+                            <input type="password" name="password" id="password" placeholder="Password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                         </div>
                         <!-- Button Login -->
                         <button type="submit" class="w-full text-white bg-primary font-bold hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 text-center">Login</button>
                         <!-- Button Login with Google -->
+                       
                         <button type="submit" class="flex items-start justify-center w-full text-primary bg-white font-bold hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5">
                             <img src="img/google.png" class="w-5 h-5" alt="">
-                            Login with Google
+                            <a href="{{ route('google.login') }}"> Login with Google</a>
                         </button> 
-
+                        
                         <div class="text-sm font-medium text-center text-gray-900">
-                            Not Registated? <a href="/register" class="text-blue-700 hover:underline font-bold">Registrasi Now!</a>
+                            Not Registered ? <a href="/register" class="text-blue-700 hover:underline font-bold">Register Now!</a>
                         </div>
                     </form>
                 </div>
