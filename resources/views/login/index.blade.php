@@ -5,7 +5,7 @@
     <div class="container">
         <div class="w-full lg:grid lg:grid-cols-2 lg:gap-2">
             <div class="flex flex-col items-center justify-center">
-                <img src="/img/logo_team.png" class="w-[120px] lg:w-[250px]" h-70 alt="">
+                <img src="/img/logo_team.png" class="w-[120px] lg:w-[250px] lg:mt-14" h-70 alt="">
             </div>
             <div class="flex flex-wrap items-center justify-center lg:mr-20 lg:mt-[50px]">
                 <div class="max-w-md mt-6 px-8 py-6 bg-primary bg-opacity-30 border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 lg:w-full">
@@ -21,6 +21,7 @@
                         </div>
                         <!-- Button Login -->
                         <button type="submit" class="w-full text-white bg-primary font-bold hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 text-center">Login</button>
+                        <p class="text-center">Or</p>
                         <!-- Button Login with Google -->
                         <button type="submit" class="flex items-start justify-center w-full text-primary bg-white font-bold hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5">
                             <img src="img/google.png" class="w-5 h-5" alt="">
