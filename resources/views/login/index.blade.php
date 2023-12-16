@@ -8,7 +8,15 @@
                 <img src="/img/logo_team.png" class="w-[120px] lg:w-[250px] lg:mt-14" h-70 alt="">
             </div>
             <div class="flex flex-wrap items-center justify-center lg:mr-20 lg:mt-[50px]">
-                <div class="max-w-md mt-6 px-8 py-6 bg-primary bg-opacity-30 border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 lg:w-full">
+                <!-- alert registration success -->
+                @if(session()->has('success'))
+                <div class="p-4 mb-4 mt-2 text-sm text-green-800 rounded-lg bg-green-300" role="alert">
+                    {{ session('success') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                @endif
+            
+                <div class="max-w-md px-8 py-6 bg-primary bg-opacity-30 border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 lg:w-full">
                     <form class="space-y-5" action="#">
                         <h5 class="text-3xl font-bold text-center border-b-2 pb-3 text-gray-900">Login</h5>
                         <div>
