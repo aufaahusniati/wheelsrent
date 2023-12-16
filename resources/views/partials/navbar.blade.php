@@ -3,8 +3,8 @@
         <div class="container">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
-                    <a href="#home" class="font-bold text-lg text-primary block py-6">
-                    <img src="/img/logo_team.png" width="75px" alt="Flowbite Logo" /></a>
+                    <a href="#home" class="font-bold text-lg text-primary block py-2">
+                    <img src="/img/logo.png" width="75px" alt="Flowbite Logo" /></a>
                 </div>
                 <div class="flex items-center px-4">
                     <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
@@ -16,16 +16,16 @@
                     <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none lg:opacity-100" >
                         <ul class="block lg:flex">
                             <li class="group">
-                                <a href="#beranda" class="text-base font-bold text-dark decoration-dark py-2 mx-8 flex group-hover:text-primary">Beranda</a>
+                                <a href="#home" class="text-base font-bold text-dark decoration-dark py-2 mx-8 flex group-hover:text-primary">Home</a>
                             </li>
                             <li class="group">
-                                <a href="#tentang" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary">Tentang Kami</a>
+                                <a href="#about" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary">About Us</a>
                             </li>
                             <li class="group">
-                                <a href="#mobil" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary">Jenis Mobil</a>
+                                <a href="#type" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary">Type Car</a>
                             </li>
                             <li class="group my-1 mx-10 lg:my-0 lg:mx-4">
-                                <button type="button" class="py-2 px-8 me-2 mb-2 font-base font-extrabold text-primary  focus:outline-none bg-white rounded-full border-2 border-primary hover:bg-primary hover:text-white focus:z-10 focus:ring-4 focus:ring-white">Reservasi</button>
+                                <button type="button" class="py-2 px-8 me-2 mb-2 font-base font-extrabold text-primary  focus:outline-none bg-white rounded-full border-2 border-primary hover:bg-primary hover:text-white focus:z-10 focus:ring-4 focus:ring-white">Reservation</button>
                             </li>
                             <li class="group mx-10 lg:mx-[-10px]">
                                 <a href="/login">

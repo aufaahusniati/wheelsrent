@@ -5,7 +5,7 @@
         <div class="container">
             <div class="w-full lg:grid lg:grid-cols-2 lg:gap-2">
                 <div class="flex flex-col items-center justify-center">
-                    <img src="/img/logo_team.png" class="w-[120px] lg:w-[250px]" h-70 alt="">
+                    <img src="/img/logo_team.png" class="w-[120px] lg:w-[250px] lg:mt-14" h-70 alt="">
                 </div>
                 <div class="flex flex-col items-center justify-center lg:mr-20 lg:mt-[50px]">
                     <div class="max-w-md px-8 py-6 bg-primary bg-opacity-30 border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 lg:w-full">
