@@ -18,22 +18,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+    Route::get('/', function () {
+        return view('index');
+    });
 
+    // Login
+    Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+    Route::post('/login', [LoginController::class, 'authenticate']);
 
-Route::get('/', function () {
-    return view('index');
-});
+    // Logout
+    Route::post('/logout', [LoginController::class, 'logout']);
 
-// Login
-Route::get('/login', [LoginController::class, 'index']);
+    // Register
+    Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
+    Route::post('/register', [RegisterController::class, 'store']);
 
-// Register
-Route::get('/register', [RegisterController::class, 'index']);
-Route::post('/register', [RegisterController::class, 'store']);
-
-// Dashboard
-Route::get('/dashboard', function () {
-    return view('dashboard.index');
-});
-Route::resource('/dashboard/posts', DashboardMobilController::class);
-Route::resource('/dashboard/sewa', DashboardSewaController::class);
+    // Dashboard
+    Route::get('/dashboard', function () {
+        return view('dashboard.index');
+    })->middleware('auth');
+    
+    Route::resource('/dashboard/posts', DashboardMobilController::class);
+    Route::resource('/dashboard/sewa', DashboardSewaController::class);
