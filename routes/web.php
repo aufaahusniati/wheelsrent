@@ -18,22 +18,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-
 Route::get('/', function () {
     return view('index');
 });
 
 // Login
-Route::get('/login', [LoginController::class, 'index']);
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::post('/login', [LoginController::class, 'authenticate']);
+
+// Logout
+  Route::post('/logout', [LoginController::class, 'logout']);
 
 // Register
-Route::get('/register', [RegisterController::class, 'index']);
+Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
+Route::post('/register', [RegisterController::class, 'store']);
 
 // Dashboard
 Route::get('/dashboard', function () {
     return view('dashboard.index');
-});
+})->middleware('auth');
+
 Route::resource('/dashboard/posts', DashboardMobilController::class);
 Route::resource('/dashboard/sewa', DashboardSewaController::class);
 
@@ -41,3 +45,7 @@ Route::resource('/dashboard/sewa', DashboardSewaController::class);
 Route::get('auth/google', [App\Http\Controllers\GoogleController::class, 'redirectToGoogle'])->name('google.login');
 
 Route::get('auth/google/callback', [App\Http\Controllers\GoogleController::class, 'handleGoogleCallback'])->name('google.callback');
+
+
+
+
