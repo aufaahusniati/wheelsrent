@@ -29,14 +29,7 @@
                         @csrf
                         <h5 class="text-3xl font-bold text-center border-b-2 pb-3 text-gray-900">Login</h5>
                         <div>
-                            <label for="email"></label>
-                            <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Email" >
-                        </div>
-                        <div>
-                            <label for="password"></label>
-                            <input type="password" name="password" id="password" placeholder="Password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
-
-                            <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 @error('username') invalid:border-red-500 @enderror" placeholder="Email" autofocus value="{{ old('email') }}">
+                            <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 @error('email') invalid:border-red-500 @enderror" placeholder="Email" autofocus value="{{ old('email') }}">
                             @error('email')
                                 <div class="text-red-500">
                                     {{ $message }}
@@ -45,7 +38,7 @@
                         </div>
                         <div>
                             <label for="password"></label>
-                            <input type="password" name="password" id="password" placeholder="Password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 @error('username') invalid:border-red-500 @enderror">
+                            <input type="password" name="password" id="password" placeholder="Password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 @error('password') invalid:border-red-500 @enderror">
                             @error('password')
                                 <div class="text-red-500">
                                     {{ $message }}

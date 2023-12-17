@@ -27,9 +27,7 @@
                             <li class="group my-1 mx-10 lg:my-0 lg:mx-4">
                                 <button type="button" class="py-2 px-8 me-2 mb-2 font-base font-extrabold text-primary  focus:outline-none bg-white rounded-full border-2 border-primary hover:bg-primary hover:text-white focus:z-10 focus:ring-4 focus:ring-white">Reservation</button>
                             </li>
-                            
                         
-
                             @auth
                             <div class="flex  items-center ml-16 mt-2 lg:mt-0  text-primary hover:opacity-30">
                                 <button type="button" class="text-base mr-[70px] lg:mr-0 inline-flex font-bold" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
