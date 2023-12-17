@@ -8,17 +8,23 @@ use Illuminate\Http\Request;
 
 class DashboardMobilController extends Controller
 {
-    
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('dashboard.posts.index');
+
+        $response = DashboardMobilController::fetchData();
+        $cars = json_decode($response);
+
+        $view_data = [
+            'cars' => $cars->results
+        ];
+        // dd($view_data);
+        return view('dashboard.posts.index', $view_data);
     }
 
     /**
-     * 
      * Show the form for creating a new resource.
      */
     public function create()
@@ -38,16 +44,16 @@ class DashboardMobilController extends Controller
     //  * Display the specified resource.
     //  */
     public function show()
-     {
+    {
         return view('dashboard.posts.edit');
-     }
+    }
 
     // /**
     //  * Show the form for editing the specified resource.
     //  */
-    // public function edit()
+    // public function edit(Post $post)
     // {
-    //     return view('dashboard.posts.edit');
+    //     //
     // }
 
     // /**
@@ -65,4 +71,34 @@ class DashboardMobilController extends Controller
     // {
     //     //
     // }
+
+
+    public function fetchData()
+    {
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => "https://data.opendatasoft.com/api/explore/v2.1/catalog/datasets/all-vehicles-model@public/records?select=make%2C%20model%2C%20year%2C%20trany%2C%20fueltype&limit=20",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "GET",
+            CURLOPT_HTTPHEADER => array(
+                "Cache-Control: no-cache",
+            ),
+        ));
+
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+
+        curl_close($curl);
+
+        if ($err) {
+            echo "cURL Error #:" . $err;
+        } else {
+            return $response;
+        }
+    }
 }
