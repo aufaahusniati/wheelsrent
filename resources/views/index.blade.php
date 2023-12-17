@@ -17,7 +17,7 @@
                             <a href="#" class="text-xs font-semibold text-white bg-primary py-[8px] px-[15px] rounded-full hover:bg-white hover:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8 ">Reservation</a>
                         </div>
                     </div>
-
+                </div>
                     <!-- Slide 2 -->
                     <div class="flex flex-wrap duration-700 ease-in-out bg-white" data-carousel-item >
                         <img src="/img/slide2.jpg" class="absolute block w-full bg-opacity-10 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
@@ -29,30 +29,31 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Slider controls -->
-                <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                        </svg>
-                        <span class="sr-only">Previous</span>
-                    </span>
-                </button>
-                <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                        </svg>
-                        <span class="sr-only">Next</span>
-                    </span>
-                </button>
             </div>
-        </div>
-    </section>
-    <!-- Hero Section End -->
 
-    <!-- Cards Section Start -->
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+    </div>
+</section>
+<!-- Hero Section End -->
+
+<!-- Cards Section Start -->
     <section id="card" class="pt-32 pb-20">
         <div class="container">
             <div class="gap-3 lg:grid lg:grid-cols-3">
@@ -66,7 +67,9 @@
                     <h5 class="mb-2 mt-2 text-base text-center font-bold tracking-tight text-primary lg:text-xl">Most Complete Fleet Selection</h5>
                     <p class="text-xs text-gray-700 lg:text-sm">WheelsRent offers a wide selection of cars from various makes and models.</p>
                 </div>
-
+                <h5 class="mb-2 mt-2 text-base text-center font-bold tracking-tight text-primary lg:text-xl">Pilihan Armada Terlengkap</h5>
+                <p class="text-xs text-gray-700 lg:text-sm">WheelsRent menawarkan beragam pilihan mobil dari berbagai merek dan model.</p>
+            </div>
                 <!-- Cards 2 -->
                 <div class="w-full mx-auto my-5 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow">
                     <div class="flex items-center justify-center">
@@ -77,7 +80,9 @@
                     <h5 class="mb-2 mt-2 text-base text-center font-bold tracking-tight text-primary lg:text-xl">Quality and Reliability</h5>
                     <p class="text-xs text-gray-700 lg:text-sm">Every WheelsRent car is always in prime condition and ready to face long or short trips with optimal performance.</p> 
                 </div>
-
+                <h5 class="mb-2 mt-2 text-base text-center font-bold tracking-tight text-primary lg:text-xl">Kualitas dan Keandalan</h5>
+                <p class="text-xs text-gray-700 lg:text-sm">Setiap mobil WheelsRent selalu dalam kondisi prima dan siap menghadapi perjalanan jauh atau pendek dengan performa yang optimal.</p>
+            </div>
                 <!-- Cards 3 -->
                 <div class="w-full mx-auto my-5 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow">
                     <div class="flex items-center justify-center">
@@ -88,28 +93,31 @@
                     <h5 class="mb-2 mt-2 text-base text-center font-bold tracking-tight  text-primary lg:text-xl">Facility</h5>
                     <p class="text-xs text-gray-700 lg:text-sm">WheelsRent provides daily, weekly and monthly car rentals as well as free key rental or with a driver.</p>
                 </div>
+                <h5 class="mb-2 mt-2 text-base text-center font-bold tracking-tight  text-primary lg:text-xl">Fasilitas</h5>
+                <p class="text-xs text-gray-700 lg:text-sm">WheelsRent tersedia sewa mobil harian, mingguan dan bulanan serta tersedia penyewaan lepas kunci maupun dengan driver. </p>
             </div>
         </div>
-    </section>
-    <!-- Cards Section End -->
+    </div>
+</section>
+<!-- Cards Section End -->
 
-    <!-- Tentang Kami Section Start -->
-    <section id="about" class="pt-36 w-full">
-        <div class="container">
-            <div class="gap-2 mx-auto lg:grid lg:grid-cols-2">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="/img/tentangkami.png" alt="">
-                </div>
-                <div>
-                    <h1 class="text-xl uppercase font-extrabold text-primary lg:text-4xl">About WheelsRent</h1>
-                    <p class="text-sm mt-3 mb-5 text-dark lg:text-lg">WheelsRent gives you the best experience with comprehensive transportation solutions car rental and professional driver services. Beginning its journey with five cars for rent in 2022, WheelsRent has grown into one of Indonesia's largest transportation companies under PT Ode to Code. Today, WheelsRent has 30 thousand car at your service, ready to support your mobility needs. With upheld professionality, WheelsRent has been trusted by thousands of business and individual customers.</p>
-                </div> 
-            </div>
-        </div>
-    </section>
-    <!-- Tentang Kami Section End -->
+<!-- Tentang Kami Section Start -->
+  <section id="about" class="pt-36 w-full">
+      <div class="container">
+          <div class="gap-2 mx-auto lg:grid lg:grid-cols-2">
+              <div>
+                  <img class="h-auto max-w-full rounded-lg" src="/img/tentangkami.png" alt="">
+              </div>
+              <div>
+                  <h1 class="text-xl uppercase font-extrabold text-primary lg:text-4xl">About WheelsRent</h1>
+                  <p class="text-sm mt-3 mb-5 text-dark lg:text-lg">WheelsRent gives you the best experience with comprehensive transportation solutions car rental and professional driver services. Beginning its journey with five cars for rent in 2022, WheelsRent has grown into one of Indonesia's largest transportation companies under PT Ode to Code. Today, WheelsRent has 30 thousand car at your service, ready to support your mobility needs. With upheld professionality, WheelsRent has been trusted by thousands of business and individual customers.</p>
+              </div> 
+          </div>
+      </div>
+  </section>
+<!-- Tentang Kami Section End -->
 
-    <!-- Unit Unggulan Section Start -->
+  <!-- Unit Unggulan Section Start -->
     <section id="type" class="pt-36">
         <div class="container">
             <div class="flex-wrap items-center justify-center text-center">
@@ -313,13 +321,9 @@
                         </div> 
                     </div>
                 </div>
-    
+
             </div>
         </div>
     </section>
-    <!-- Unit Unggulan Section End -->
-        
-        
-    
+  <!-- Unit Unggulan Section End -->
 @endsection
-
