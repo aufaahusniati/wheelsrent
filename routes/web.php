@@ -37,7 +37,7 @@ Route::post('/register', [RegisterController::class, 'store']);
 // Dashboard
 Route::get('/dashboard', function () {
     return view('dashboard.index');
-})->middleware('auth');
+});
 
 Route::resource('/dashboard/posts', DashboardMobilController::class);
 Route::resource('/dashboard/sewa', DashboardSewaController::class);
