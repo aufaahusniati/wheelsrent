@@ -43,6 +43,7 @@ Route::resource('/dashboard/posts', DashboardMobilController::class);
 Route::resource('/dashboard/sewa', DashboardSewaController::class);
 Route::resource('/dashboard/customer', DashboardCustomerController::class);
 
+
 //Auth Google
 Route::get('auth/google', [App\Http\Controllers\GoogleController::class, 'redirectToGoogle'])->name('google.login');
 
