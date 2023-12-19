@@ -25,10 +25,10 @@ class GoogleController extends Controller
                 return redirect()->intended('dashboard');
             } else {
                 $newUser = User::create([
-                    'name' => $user->getName(),
-                    'userName' => $user->getEmail(),
-                    'email' => $user->getEmail(),
-                    'google_id' => $user->getId(),
+                    'name' => $user->name,
+                    'username' => $user->email,
+                    'email' => $user->email,
+                    'google_id' => $user->id,
                     'password' => bcrypt('123123')
                 ]);
                 Auth::login($newUser);
