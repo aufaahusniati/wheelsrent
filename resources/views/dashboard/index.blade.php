@@ -1,40 +1,46 @@
 @extends('dashboard.layouts.main')
 
 @section('container')
-<div class="flex items-center justify-between py-10 mt-5 px-10">
-    <h1 class="font-poppins text-5xl font-semibold">Welcome Back, Admin!</h1>  
-</div>
+<div class="bg-primary bg-opacity-30 mx-24 mt-14 rounded-xl ">
+    <div class="flex items-center justify-between py-10 mt-5 px-10">
+        <h1 class=" text-3xl font-semibold">Welcome Back, Admin!</h1>  
+    </div>
 
-<div class="w-[calc(100%-256px)] min-h-screen  bg-gray-50">
-    <div class="flex justify-center pt-10 ">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-28">
-            {{-- <a href="">
-                <div class=" bg-white border-x-4 border-y-4 rounded-xl hover:bg-gray-100  border-primary border-opacity-50 shadow-2xl shadow-gray-800">
-                    <span class="text-3xl font-poppins font-semibold pl-6 "> 2</span>
+    <div class="flex flex-wrap items-center justify-center pt-5 ">
+        <div class="grid grid-cols-3 gap-5 px-5">
+            <a href="/dashboard/customer">
+                <div class=" bg-[#4CB9E7]  border-2 rounded-lg hover:bg-[#3081D0] border-primary border-opacity-50 shadow-lg shadow-gray-900">
+                    <span class="text-3xl  font-semibold pl-6 "> 2</span>
                     <div class="flex justify-between">
-                        <p class=" pt-16 pl-6 font-poppins font-bold text-3xl">Admin</p>
-                        <img src= "/img/icon_user.png" class=" w-28 h-28" alt="user">              
+                        <p class=" pt-16 pl-6  font-bold text-3xl">Customer</p>
+                        <img src= "/img/icon_customer.png" class=" w-28 h-28" alt="user">              
                     </div>
                 </div>
-            </a> --}}
+            </a>
+
             <a href="/dashboard/posts">
-                <div class=" bg-white border-x-4 border-y-4 rounded-xl hover:bg-gray-100  border-primary border-opacity-50 shadow-2xl shadow-gray-800">
-                    <span class="text-3xl font-poppins font-semibold pl-6 ">10</span>
+                <div class=" bg-[#A6CF98] border-2 rounded-lg  hover:bg-[#557C55] border-green-500 border-opacity-50 shadow-lg shadow-gray-900 ">
+                    <span class="text-3xl pt-10 font-semibold pl-6 ">10</span>
                     <div class="flex justify-between">
-                        <p class=" pt-16 pl-6 font-poppins font-bold text-3xl">Car</p>
-                        <img src= "/img/icon_car.png" class=" w-28 h-28" alt="mobil">              
+                        <p class=" pt-16 pl-6  font-bold text-3xl">Car</p>
+                        <img src= "/img/icon_car.png" class=" w-28 h-28 " alt="mobil">              
                     </div>
                 </div>
             </a>
             <a href="/dashboard/sewa">
-                <div class="bg-white border-x-4 border-y-4 rounded-xl hover:bg-gray-100  border-primary border-opacity-50  shadow-2xl shadow-gray-800">
-                    <span class="text-3xl font-poppins font-semibold pl-6 ">15</span>
+                <div class="bg-[#FEFFAC] mb-20 border-2 rounded-lg  hover:bg-[#F4E869]  border-yellow-500 border-opacity-50  ">
+                    <span class="text-3xl  font-semibold pl-6 ">15</span>
                     <div class="flex justify-between">
-                        <p class=" pt-16 pl-6 font-poppins font-bold text-3xl">Rent</p>
-                        <img src= "/img/icon_sewa.png" class=" w-28 h-28" alt="sewa">              
+                        <p class=" pt-16 pl-6  font-bold text-3xl">Rent</p>
+                        <img src= "/img/icon_sewa.png" class=" w-28 h-28 " alt="sewa">              
                     </div>
                 </div>
-            </a>           
+            </a> 
+            <div>
+                
+            </div>
+
+            </div>          
         </div>
     </div>
 </div>
