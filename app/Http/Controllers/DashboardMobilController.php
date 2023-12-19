@@ -39,16 +39,16 @@ class DashboardMobilController extends Controller
     //  */
     public function show()
      {
-        return view('dashboard.posts.edit');
+        return view('dashboard.posts.show');
      }
 
     // /**
     //  * Show the form for editing the specified resource.
     //  */
-    // public function edit()
-    // {
-    //     return view('dashboard.posts.edit');
-    // }
+    public function edit()
+    {
+        return view('dashboard.posts.edit');
+    }
 
     // /**
     //  * Update the specified resource in storage.
