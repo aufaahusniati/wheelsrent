@@ -11,49 +11,48 @@
                     <div class="flex flex-wrap duration-700 ease-in-out bg-white" data-carousel-item="active" >
                         <img src="/img/slide1.jpg" class="absolute block bg-opacity-10 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                         <div class="absolute w-full self-center ml-[65px] lg:w-1/2">
-                            <h1 class="text-xs font-bold text-white lg:text-4xl">Get Your Best Experience With WheelsRent</h1>
-                            <p class="text-xs mt-3 mb-5 mr-20 text-slate-300 leading-relaxed lg:text-lg">Provides the best transportation services and solutions to answer your daily mobility needs.</p>
+                            <h1 class="text-xs font-bold text-white lg:text-4xl">Dapatkan pengalaman terbaik Anda dengan WheelsRent</h1>
+                            <p class="text-xs mt-3 mb-5 mr-20 text-slate-300 leading-relaxed lg:text-lg">Memberikan transportasi dan solusi terbaik untuk menjawab kebutuhan mobilitas anda sehari-hari</p>
                                 
-                            <a href="#" class="text-xs font-semibold text-white bg-primary py-[8px] px-[15px] rounded-full hover:bg-white hover:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8 ">Reservation</a>
+                            <a href="#" class="text-xs font-semibold text-white bg-primary py-[8px] px-[15px] rounded-full hover:bg-white hover:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8 ">Reservasi</a>
                         </div>
                     </div>
-                </div>
+
                     <!-- Slide 2 -->
                     <div class="flex flex-wrap duration-700 ease-in-out bg-white" data-carousel-item >
                         <img src="/img/slide2.jpg" class="absolute block w-full bg-opacity-10 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                         <div class="absolute w-full self-center ml-[65px] lg:w-1/2">
-                            <h1 class="text-xs font-bold text-white lg:text-4xl">Rent Car Bandung</h1>
-                            <p class="text-xs mt-2 mb-3 mr-[80px] text-slate-300 leading-relaxed lg:text-lg">Wheelrent is a company that operates in the rental sector according to customer needs.</p>
+                            <h1 class="text-xs font-bold text-white lg:text-4xl">Jasa Sewa Mobil Bandung</h1>
+                            <p class="text-xs mt-2 mb-3 mr-[80px] text-slate-300 leading-relaxed lg:text-lg">WheelsRent merupakan perusahaan yang bergerak dibidang jasa rental sesuai dengan kebutuhan pelanggan.</p>
 
-                            <a href="#" class="text-xs font-semibold text-white bg-primary py-[5px] px-[15px] rounded-full hover:bg-white hover:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8">Check Price</a>
+                            <a href="#" class="text-xs font-semibold text-white bg-primary py-[5px] px-[15px] rounded-full hover:bg-white hover:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8">Cek Harga</a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Slider controls -->
+                <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
             </div>
-
-            <!-- Slider controls -->
-            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
-                    </svg>
-                    <span class="sr-only">Previous</span>
-                </span>
-            </button>
-            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
-                    </svg>
-                    <span class="sr-only">Next</span>
-                </span>
-            </button>
         </div>
-    </div>
-</section>
-<!-- Hero Section End -->
+    </section>
+    <!-- Hero Section End -->
 
-<!-- Cards Section Start -->
+    <!-- Cards Section Start -->
     <section id="card" class="pt-32 pb-20">
         <div class="container">
             <div class="gap-3 lg:grid lg:grid-cols-3">
@@ -64,12 +63,10 @@
                             <path fill="#000174" d="M135.2 117.4L109.1 192H402.9l-26.1-74.6C372.3 104.6 360.2 96 346.6 96H165.4c-13.6 0-25.7 8.6-30.2 21.4zM39.6 196.8L74.8 96.3C88.3 57.8 124.6 32 165.4 32H346.6c40.8 0 77.1 25.8 90.6 64.3l35.2 100.5c23.2 9.6 39.6 32.5 39.6 59.2V400v48c0 17.7-14.3 32-32 32H448c-17.7 0-32-14.3-32-32V400H96v48c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V400 256c0-26.7 16.4-49.6 39.6-59.2zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/>
                         </svg>
                     </div>
-                    <h5 class="mb-2 mt-2 text-base text-center font-bold tracking-tight text-primary lg:text-xl">Most Complete Fleet Selection</h5>
-                    <p class="text-xs text-gray-700 lg:text-sm">WheelsRent offers a wide selection of cars from various makes and models.</p>
+                    <h5 class="mb-2 mt-2 text-base text-center font-bold tracking-tight text-primary lg:text-xl">Pilihan Armada Terlengkap</h5>
+                    <p class="text-xs text-gray-700 lg:text-sm">WheelsRent menawarkan beragam pilihan mobil dari berbagai merek dan model.</p>
                 </div>
-                <h5 class="mb-2 mt-2 text-base text-center font-bold tracking-tight text-primary lg:text-xl">Pilihan Armada Terlengkap</h5>
-                <p class="text-xs text-gray-700 lg:text-sm">WheelsRent menawarkan beragam pilihan mobil dari berbagai merek dan model.</p>
-            </div>
+
                 <!-- Cards 2 -->
                 <div class="w-full mx-auto my-5 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow">
                     <div class="flex items-center justify-center">
@@ -77,12 +74,10 @@
                             <path fill="#000174" d="M4.1 38.2C1.4 34.2 0 29.4 0 24.6C0 11 11 0 24.6 0H133.9c11.2 0 21.7 5.9 27.4 15.5l68.5 114.1c-48.2 6.1-91.3 28.6-123.4 61.9L4.1 38.2zm503.7 0L405.6 191.5c-32.1-33.3-75.2-55.8-123.4-61.9L350.7 15.5C356.5 5.9 366.9 0 378.1 0H487.4C501 0 512 11 512 24.6c0 4.8-1.4 9.6-4.1 13.6zM80 336a176 176 0 1 1 352 0A176 176 0 1 1 80 336zm184.4-94.9c-3.4-7-13.3-7-16.8 0l-22.4 45.4c-1.4 2.8-4 4.7-7 5.1L168 298.9c-7.7 1.1-10.7 10.5-5.2 16l36.3 35.4c2.2 2.2 3.2 5.2 2.7 8.3l-8.6 49.9c-1.3 7.6 6.7 13.5 13.6 9.9l44.8-23.6c2.7-1.4 6-1.4 8.7 0l44.8 23.6c6.9 3.6 14.9-2.2 13.6-9.9l-8.6-49.9c-.5-3 .5-6.1 2.7-8.3l36.3-35.4c5.6-5.4 2.5-14.8-5.2-16l-50.1-7.3c-3-.4-5.7-2.4-7-5.1l-22.4-45.4z"/>
                         </svg>
                     </div>
-                    <h5 class="mb-2 mt-2 text-base text-center font-bold tracking-tight text-primary lg:text-xl">Quality and Reliability</h5>
-                    <p class="text-xs text-gray-700 lg:text-sm">Every WheelsRent car is always in prime condition and ready to face long or short trips with optimal performance.</p> 
+                    <h5 class="mb-2 mt-2 text-base text-center font-bold tracking-tight text-primary lg:text-xl">Kualitas dan Keandalan</h5>
+                    <p class="text-xs text-gray-700 lg:text-sm">Setiap mobil WheelsRent selalu dalam kondisi prima dan siap menghadapi perjalanan jauh atau pendek dengan performa yang optimal.</p> 
                 </div>
-                <h5 class="mb-2 mt-2 text-base text-center font-bold tracking-tight text-primary lg:text-xl">Kualitas dan Keandalan</h5>
-                <p class="text-xs text-gray-700 lg:text-sm">Setiap mobil WheelsRent selalu dalam kondisi prima dan siap menghadapi perjalanan jauh atau pendek dengan performa yang optimal.</p>
-            </div>
+
                 <!-- Cards 3 -->
                 <div class="w-full mx-auto my-5 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow">
                     <div class="flex items-center justify-center">
@@ -90,32 +85,31 @@
                             <path fill="#000174" d="M163.9 136.9c-29.4-29.8-29.4-78.2 0-108s77-29.8 106.4 0l17.7 18 17.7-18c29.4-29.8 77-29.8 106.4 0s29.4 78.2 0 108L310.5 240.1c-6.2 6.3-14.3 9.4-22.5 9.4s-16.3-3.1-22.5-9.4L163.9 136.9zM568.2 336.3c13.1 17.8 9.3 42.8-8.5 55.9L433.1 485.5c-23.4 17.2-51.6 26.5-80.7 26.5H192 32c-17.7 0-32-14.3-32-32V416c0-17.7 14.3-32 32-32H68.8l44.9-36c22.7-18.2 50.9-28 80-28H272h16 64c17.7 0 32 14.3 32 32s-14.3 32-32 32H288 272c-8.8 0-16 7.2-16 16s7.2 16 16 16H392.6l119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5zM193.6 384l0 0-.9 0c.3 0 .6 0 .9 0z"/>
                         </svg>
                     </div>
-                    <h5 class="mb-2 mt-2 text-base text-center font-bold tracking-tight  text-primary lg:text-xl">Facility</h5>
-                    <p class="text-xs text-gray-700 lg:text-sm">WheelsRent provides daily, weekly and monthly car rentals as well as free key rental or with a driver.</p>
+                    <h5 class="mb-2 mt-2 text-base text-center font-bold tracking-tight  text-primary lg:text-xl">Fasilitas</h5>
+                    <p class="text-xs text-gray-700 lg:text-sm">WheelsRent tersedia sewa mobil harian, mingguan dan bulanan serta tersedia penyewaan lepas kunci maupun dengan driver. </p>
                 </div>
-                <h5 class="mb-2 mt-2 text-base text-center font-bold tracking-tight  text-primary lg:text-xl">Fasilitas</h5>
-                <p class="text-xs text-gray-700 lg:text-sm">WheelsRent tersedia sewa mobil harian, mingguan dan bulanan serta tersedia penyewaan lepas kunci maupun dengan driver. </p>
             </div>
         </div>
-    </div>
-</section>
-<!-- Cards Section End -->
+    </section>
+    <!-- Cards Section End -->
 
-<!-- Tentang Kami Section Start -->
-  <section id="about" class="pt-36 w-full">
-      <div class="container">
-          <div class="gap-2 mx-auto lg:grid lg:grid-cols-2">
-              <div>
-                  <img class="h-auto max-w-full rounded-lg" src="/img/tentangkami.png" alt="">
-              </div>
-              <div>
-                  <h1 class="text-xl uppercase font-extrabold text-primary lg:text-4xl">About WheelsRent</h1>
-                  <p class="text-sm mt-3 mb-5 text-dark lg:text-lg">WheelsRent gives you the best experience with comprehensive transportation solutions car rental and professional driver services. Beginning its journey with five cars for rent in 2022, WheelsRent has grown into one of Indonesia's largest transportation companies under PT Ode to Code. Today, WheelsRent has 30 thousand car at your service, ready to support your mobility needs. With upheld professionality, WheelsRent has been trusted by thousands of business and individual customers.</p>
-              </div> 
-          </div>
-      </div>
-  </section>
-<!-- Tentang Kami Section End -->
+    <!-- Tentang Kami Section Start -->
+    <section id="about" class="pt-36 w-full bg-primary bg-opacity-10 ">
+        <div class="container">
+            <div class="gap-2 mx-auto lg:grid lg:grid-cols-2">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/img/tentangkami.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-xl uppercase font-extrabold text-primary lg:text-4xl">Tentang WheelsRent</h1>
+                    <p class="text-sm mt-3 mb-5 text-dark lg:text-lg">Wheelsrent memberikan Anda pengalaman terbaik dengan solusi transportasi sewa mobil dan layanan pengemudi profesional. Memulai perjalanannya dengan menyewa lima mobil pada tahun 2023, wheelsrent telah berkembang menjadi salah satu perusahaan transportasi terbesar di Indonesia di bawah PT Ode to Code. Saat ini Wheelsrent memiliki 30 ribu kendaraan yang siap melayani Anda, siap menunjang kebutuhan mobilitas Anda. Dengan menjunjung tinggi profesionalitas, Wheelsrent telah dipercaya oleh ribuan pelanggan bisnis maupun individu.</p>
+
+                    <a href="#" class="text-xs font-semibold py-[7px] px-[15px] text-white bg-primary rounded-full border-2 border-primary hover:bg-white hover:text-primary focus:z-10 focus:ring-2 focus:ring-primary focus:text-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white lg:text-base lg:py-2 lg:px-8">Selengkapnya</a>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <!-- Tentang Kami Section End -->
 
   <!-- Unit Unggulan Section Start -->
     <section id="type" class="pt-36">
