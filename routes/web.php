@@ -5,6 +5,7 @@ use App\Http\Controllers\DashboardSewaController;
 use App\Http\Controllers\DashboardCustomerController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\LiveSearchController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -21,6 +22,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
+});
+
+// reservation
+Route::get('/reservation', function () {
+    return view('reservation');
 });
 
 // Login
@@ -48,3 +54,6 @@ Route::resource('/dashboard/customer', DashboardCustomerController::class);
 Route::get('auth/google', [App\Http\Controllers\GoogleController::class, 'redirectToGoogle'])->name('google.login');
 
 Route::get('auth/google/callback', [App\Http\Controllers\GoogleController::class, 'handleGoogleCallback'])->name('google.callback');
+
+// Live search
+// Route::get('/', [LiveSearchController::class, 'index']);
