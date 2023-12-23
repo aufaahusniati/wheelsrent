@@ -2,12 +2,13 @@
  <footer class="bg-dark pt-24 pb-12">
      <div class="container">
          <div class="flex flex-wrap">
+
              <div class="mb-12 w-full px-4 font-medium  text-slate-300 md:w-1/3">
                  <h2 class="mb-5 text-4xl font-bold  text-white">Wheelsrent</h2>
                  <p>Solutions for all transportation needs for your tourist or business trips in all major cities in
                      Indonesia</p>
              </div>
-             <div class="mb-12 w-full px-4 md:w-1/3">
+             <div class="mb-12 w-full  md:w-1/3  px-4">
                  <h3 class="mb-5 text-xl font-semibold text-white">Quick Link</h3>
                  <ul class="text-slate-300">
                      <li>
@@ -21,7 +22,7 @@
                      </li>
                  </ul>
              </div>
-             <div class="mb-12 w-full px-4 md:w-1/3">
+             <div class="mb-12 w-full md:w-1/3 px-4">
                  <h3 class="mb-5 text-xl font-semibold text-white">Info</h3>
                  <ul class="text-slate-300">
                      <li>
