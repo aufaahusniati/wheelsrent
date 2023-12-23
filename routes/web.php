@@ -28,6 +28,7 @@ Route::get('/', function () {
 // Type Car
 Route::get('/type_car', function () {
     return view('type_car');
+}); 
 
 // reservation
 Route::get('/reservation', function () {
