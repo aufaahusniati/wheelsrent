@@ -5,6 +5,7 @@ use App\Http\Controllers\DashboardSewaController;
 use App\Http\Controllers\DashboardCustomerController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\LiveSearchController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -18,9 +19,21 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+//Home
 Route::get('/', function () {
   return view('index');
+});
+
+
+// Type Car
+Route::get('/type_car', function () {
+    return view('type_car');
+}); 
+
+// reservation
+Route::get('/reservation', function () {
+    return view('reservation');
+
 });
 
 // Login

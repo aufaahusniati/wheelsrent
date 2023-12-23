@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +14,13 @@
 
     <title>WheelsRent</title>
 </head>
-    <body>
-        @include('partials.navbar')
-            @yield('container')
-    </body>
+
+<body>
+    @include('partials.navbar')
+    @yield('container')
+    @include('partials.footer')
+</body>
+{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/datepicker.min.js"></script> --}}
 <script src="/js/script.js"></script>
+
 </html>

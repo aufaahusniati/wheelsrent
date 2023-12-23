@@ -14,7 +14,7 @@
                             <h5 class="text-3xl font-bold text-center border-b-2 pb-3 text-gray-900">Register</h5>
                             <div>
                                 <label for="name"></label>
-                                <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  @error('name') invalid:border-red-500 @enderror" placeholder="Full Name" required value="{{ old('name') }}">
+                                <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  @error('name') invalid:border-red-500 @enderror" placeholder="Full Name" value="{{ old('name') }}">
                                 @error('name')
                                 <div class="text-red-500">
                                     {{ $message }}
@@ -23,7 +23,7 @@
                             </div>
                             <div>
                                 <label for="username"></label>
-                                <input type="text" name="username" id="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  @error('username') invalid:border-red-500 @enderror " placeholder="Username" required value="{{ old('username') }}">
+                                <input type="text" name="username" id="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  @error('username') invalid:border-red-500 @enderror " placeholder="Username" value="{{ old('username') }}">
                                 @error('username')
                                 <div class="text-red-500">
                                     {{ $message }}
@@ -32,7 +32,7 @@
                             </div>
                             <div>
                                 <label for="email"></label>
-                                <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 @error('email') invalid:border-red-500 @enderror" placeholder="Email" required value="{{ old('email') }}">
+                                <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 @error('email') invalid:border-red-500 @enderror" placeholder="Email" value="{{ old('email') }}">
                                 @error('email')
                                     <div class="text-red-500">
                                         {{ $message }}
