@@ -94,19 +94,32 @@
 <!-- Cards Section End -->
 
 <!-- Tentang Kami Section Start -->
-<section id="about" class="pt-36 w-full bg-primary bg-opacity-10 ">
+<section id="about" class="pt-36 w-full  ">
     <div class="container">
-        <div class="gap-2 mx-auto lg:grid lg:grid-cols-2">
+        <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#EEF5FF" fill-opacity="1" d="M0,224L26.7,213.3C53.3,203,107,181,160,176C213.3,171,267,181,320,186.7C373.3,192,427,192,480,165.3C533.3,139,587,85,640,101.3C693.3,117,747,203,800,245.3C853.3,288,907,288,960,240C1013.3,192,1067,96,1120,96C1173.3,96,1227,192,1280,234.7C1333.3,277,1387,267,1413,261.3L1440,256L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
+            </svg></div>
+        <div class="gap-2 mx-auto lg:grid lg:grid-cols-2 bg-[#EEF5FF]">
             <div>
                 <img class="h-auto max-w-full rounded-lg" src="/img/tentangkami.png" alt="">
             </div>
             <div>
-                <h1 class="text-xl uppercase font-extrabold text-primary lg:text-4xl">Tentang WheelsRent</h1>
-                <p class="text-sm mt-3 mb-5 text-dark lg:text-lg">Wheelsrent memberikan Anda pengalaman terbaik dengan solusi transportasi sewa mobil dan layanan pengemudi profesional. Memulai perjalanannya dengan menyewa lima mobil pada tahun 2023, wheelsrent telah berkembang menjadi salah satu perusahaan transportasi terbesar di Indonesia di bawah PT Ode to Code. Saat ini Wheelsrent memiliki 30 ribu kendaraan yang siap melayani Anda, siap menunjang kebutuhan mobilitas Anda. Dengan menjunjung tinggi profesionalitas, Wheelsrent telah dipercaya oleh ribuan pelanggan bisnis maupun individu.</p>
+                <p class="text-center text-slate-400">about</p>
+                <div class="mb-4 border-orange-400 border-t-4 w-10 flex flex-wrap items-center justify-center  text-center mx-auto"></div>
+                <h1 class="text-xl uppercase font-extrabold text-primary lg:text-4xl text-center mb-2">WheelsRent</h1>
+                <p class="text-xs mt-3 mb-4 text-dark lg:text-lg mx-4">WheelsRent is a car rental company that offers a variety of vehicle options for your travel needs.
+                    With WheelsRent, you can choose from a range of modern and high-quality car models to suit your journey.
+                    WheelsRent's friendly and professional customer service is ready to assist you in the booking and rental process.
+                    With an extensive network of locations, WheelsRent is present to make car rental convenient at various strategic spots.
+                    Customer safety and comfort are WheelsRent's top priorities, ensuring well-maintained and safe vehicles for every trip.</p>
 
-                <a href="#" class="text-xs font-semibold py-[7px] px-[15px] text-white bg-primary rounded-full border-2 border-primary hover:bg-white hover:text-primary focus:z-10 focus:ring-2 focus:ring-primary focus:text-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white lg:text-base lg:py-2 lg:px-8">Selengkapnya</a>
+                <a href="#" class="ml-4 text-xs font-semibold py-[4px] px-[10px] text-white bg-primary rounded-full border-2 border-primary hover:bg-white hover:text-primary focus:z-10 focus:ring-2 focus:ring-primary focus:text-primary dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white lg:text-base lg:py-2 lg:px-8">Selengkapnya</a>
             </div>
+
         </div>
+        <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#EEF5FF" fill-opacity="1" d="M0,128L26.7,138.7C53.3,149,107,171,160,160C213.3,149,267,107,320,101.3C373.3,96,427,128,480,170.7C533.3,213,587,267,640,288C693.3,309,747,299,800,288C853.3,277,907,267,960,272C1013.3,277,1067,299,1120,277.3C1173.3,256,1227,192,1280,149.3C1333.3,107,1387,85,1413,74.7L1440,64L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path>
+            </svg></div>
     </div>
 </section>
 <!-- Tentang Kami Section End -->
