@@ -24,10 +24,16 @@
                         <li class="group">
                             <a href="/type_car" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary">Type Car</a>
                         </li>
-                        <li class="group my-1 mx-10 lg:my-0 lg:mx-4">
-                            <button type="button" class="py-2 px-8 me-2 mb-2 font-base font-extrabold text-primary  focus:outline-none bg-white rounded-full border-2 border-primary hover:bg-primary hover:text-white focus:z-10 focus:ring-4 focus:ring-white">Reservation</button>
-                        </li>
-                    
+                        <ul class="group my-1 mx-10 lg:my-0 lg:mx-4">
+                            <a href="https://web.whatsapp.com/" target="_blank">
+                            <button type="button" class="inline-flex items-center px-8 py-2 font-extrabold text-primary bg-white rounded-full border-2 border-primary hover:bg-slate-100 hover:text-primary focus:z-10 focus:ring-2 focus:ring-primary focus:text-primary">
+                                <svg class="w-5 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m16.344 12.168-1.4-1.4a1.98 1.98 0 0 0-2.8 0l-.7.7a1.98 1.98 0 0 1-2.8 0l-2.1-2.1a1.98 1.98 0 0 1 0-2.8l.7-.7a1.981 1.981 0 0 0 0-2.8l-1.4-1.4a1.828 1.828 0 0 0-2.8 0C-.638 5.323 1.1 9.542 4.78 13.22c3.68 3.678 7.9 5.418 11.564 1.752a1.828 1.828 0 0 0 0-2.804Z"/>
+                                  </svg>
+                                Call Center
+                            </button></a>
+                        </ul>
+
                         @auth
                         <div class="flex  items-center ml-16 mt-2 lg:mt-0  text-primary hover:opacity-30">
                             <button type="button" class="text-base mr-[70px] lg:mr-0 inline-flex font-bold" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
@@ -60,6 +66,7 @@
                             </div>
                         </div>
 
+                        {{-- Button login --}}
                         @else
                             <ul class="group mx-10 lg:mx-[-10px]">
                                 <a href="/login">
