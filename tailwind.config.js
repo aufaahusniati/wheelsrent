@@ -15,15 +15,14 @@ module.exports = {
       colors: {
         primary: '#0174BE',
         secondary: '#D2DE32',
-        dark: '#0f172a',
-        
+        dark: '#0f172a',  
       },
       screens: {
         '2xl' : '1320px'
       },
     },
-  },
   plugins: [
       require('flowbite/plugin')
   ],
+  }
 }
