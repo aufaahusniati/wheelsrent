@@ -19,14 +19,20 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+//Home
 Route::get('/', function () {
     return view('index');
 });
 
+
+// Type Car
+Route::get('/type_car', function () {
+    return view('type_car');
+
 // reservation
 Route::get('/reservation', function () {
     return view('reservation');
+
 });
 
 // Login
