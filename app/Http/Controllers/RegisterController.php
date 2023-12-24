@@ -11,25 +11,25 @@ class RegisterController extends Controller
     // Method index
     public function index()
     {
-        return view('register.index', [
-            'title' => 'Register',
-            'active' => 'register'
-        ]);
+        return view('register.register');
     }
 
     public function store(Request $request)
     {
-        $validatedData = $request->validate([
-            'name' => 'required|max:255',
-            'username' => ['required', 'min:3', 'max:255', 'unique:users'],
+        $validateData = $request->validate([
+            'name' => 'required|min:3|max:255',
             'email' => 'required|email:dns|unique:users',
             'password' => 'required|min:5|max:255'
         ]);
+        
+        $validateData['password'] = bcrypt($validateData['password']);
 
-        $validatedData['password'] = Hash::make($validatedData['password']);
+        if (User::where('email', $validateData['email'])->value('google_id')) {
+            return redirect('/login')->with('error', 'Email already registered with Google!');
+        }
 
-        User::create($validatedData);
+        User::create($validateData);
 
-        return redirect('/login')->with('success', 'Registration successfull! Please login');
+        return redirect('/login')->with('success', 'Registration Successfull! Please login');
     }
 }
