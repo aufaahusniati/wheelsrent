@@ -19,12 +19,11 @@ use Laravel\Socialite\Facades\Socialite;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-//Home
+// Home
 Route::get('/', function () {
     return view('index');
   });
-  
-  
+
 // Type Car
 Route::get('/type_car', function () {
     return view('type_car');
@@ -33,10 +32,9 @@ Route::get('/type_car', function () {
 // reservation
 Route::get('/reservation', function () {
     return view('reservation');
-
 });
 
-// Login
+// Login Group
 Route::middleware(['guest'])->group(function(){
     // Login
     Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
@@ -45,8 +43,9 @@ Route::middleware(['guest'])->group(function(){
     Route::get('/register', [RegisterController::class, 'index']);
     Route::post('/register', [RegisterController::class, 'store']);
 });
+
 // Logout
-  Route::post('/logout', [LoginController::class, 'logout']);
+Route::post('/logout', [LoginController::class, 'logout']);
 
 
 //Auth Google
@@ -75,8 +74,6 @@ Route::get('/dashboard/posts/{id}', [DashboardMobilController::class, 'show'])->
 Route::get('/dashboard/posts/{id}/edit', [DashboardMobilController::class, 'edit'])->name('posts.edit');
 Route::put('/dashboard/posts/{id}', [DashboardMobilController::class, 'update'])->name('posts.update');
 Route::delete('/dashboard/posts/{id}', [DashboardMobilController::class, 'destroy'])->name('posts.destroy');
-
-
 
 // Live search
 // Route::get('/', [LiveSearchController::class, 'index']);

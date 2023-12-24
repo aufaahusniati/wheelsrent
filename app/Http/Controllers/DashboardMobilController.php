@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
-
+use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Redirect;
 
 class DashboardMobilController extends Controller
 {
@@ -44,9 +45,9 @@ class DashboardMobilController extends Controller
     //  * Display the specified resource.
     //  */
     public function show()
-     {
+    {
         return view('dashboard.posts.show');
-     }
+    }
 
     // /**
     //  * Show the form for editing the specified resource.
@@ -104,5 +105,32 @@ class DashboardMobilController extends Controller
         } else {
             return $response;
         }
+    }
+
+    public function store(Request $request)
+    {
+        // Logic to store a new post
+        // You need to adapt this based on your API response structure
+        // For example, you might need to send a POST request to the API to create a new record
+
+        return Redirect::route('posts.index');
+    }
+
+    public function update(Request $request, $id)
+    {
+        // Logic to update a post
+        // You need to adapt this based on your API response structure
+        // For example, you might need to send a PUT request to the API to update a record
+
+        return Redirect::route('posts.index');
+    }
+
+    public function destroy($id)
+    {
+        // Logic to delete a post
+        // You need to adapt this based on your API response structure
+        // For example, you might need to send a DELETE request to the API to delete a record
+
+        return Redirect::route('posts.index');
     }
 }

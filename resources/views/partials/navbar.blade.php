@@ -1,5 +1,5 @@
 <!-- Header Start -->
-<header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+<header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 border-b-2">
     <div class="container">
         <div class="flex items-center justify-between relative">
             <div class="px-4">
@@ -22,7 +22,7 @@
                             <a href="#about" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary">About Us</a>
                         </li>
                         <li class="group">
-                            <a href="#type" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary">Type Car</a>
+                            <a href="/type_car" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary">Type Car</a>
                         </li>
                         <ul class="group my-1 mx-10 lg:my-0 lg:mx-4">
                             <a href="https://web.whatsapp.com/" target="_blank">
