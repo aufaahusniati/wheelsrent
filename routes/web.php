@@ -30,6 +30,11 @@ Route::get('/type_car', function () {
     return view('type_car');
 }); 
 
+// About us
+Route::get('/about_us', function () {
+    return view('about_us');
+}); 
+
 // reservation
 Route::get('/reservation', function () {
     return view('reservation');
