@@ -13,7 +13,6 @@
                             @csrf
                             <h5 class="text-3xl font-bold text-center border-b-2 pb-3 text-gray-900">Register</h5>
                             <div>
-                                <label for="name"></label>
                                 <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  @error('name') invalid:border-red-500 @enderror" placeholder="Full Name" value="{{ old('name') }}">
                                 @error('name')
                                 <div class="text-red-500">
@@ -22,16 +21,6 @@
                                 @enderror
                             </div>
                             <div>
-                                <label for="username"></label>
-                                <input type="text" name="username" id="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  @error('username') invalid:border-red-500 @enderror " placeholder="Username" value="{{ old('username') }}">
-                                @error('username')
-                                <div class="text-red-500">
-                                    {{ $message }}
-                                </div>
-                                @enderror
-                            </div>
-                            <div>
-                                <label for="email"></label>
                                 <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 @error('email') invalid:border-red-500 @enderror" placeholder="Email" value="{{ old('email') }}">
                                 @error('email')
                                     <div class="text-red-500">
@@ -40,8 +29,15 @@
                                 @enderror
                             </div>
                             <div>
-                                <label for="password"></label>
-                                <input type="password" name="password" id="password" placeholder="Password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 @error('password') invalid:border-red-500 @enderror">
+                                <input type="password" name="password" id="password" placeholder="Password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                                @error('password')
+                                    <div class="text-red-500">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
+                            <div>
+                                <input type="password" name="password-confirm" id="password-confirm" placeholder="Confirm Password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                                 @error('password')
                                     <div class="text-red-500">
                                         {{ $message }}
@@ -50,9 +46,16 @@
                             </div>
 
                             <button type="submit" class="flex items-start justify-center w-full text-white bg-primary font-bold hover:bg-gray-300 hover:text-primary focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5">Create Account</button>
-                                <p class="text-sm font-light text-dark">
-                                    Do not have an account? <a href="/login" class="font-bold text-primary-600 text-blue-700 hover:underline">Login here</a>
-                                </p> 
+                            <p class="text-center">Or</p>
+                            
+                             <!-- Button Login with Google -->
+                            <button onclick="window.location.href='{{ route('google.login') }}'" type="submit" class="flex items-start justify-center w-full text-primary bg-white font-bold hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5">
+                                <img src="/img/google.png" class="w-5 h-5" alt="">
+                              Login with Google
+                            </button>
+                            <p class="text-sm font-light text-dark">Do not have an account? 
+                                <a href="/login" class="font-bold text-primary-600 text-blue-700 hover:underline">Login here</a>
+                            </p> 
                         </form>
                     </div>
                 </div>
