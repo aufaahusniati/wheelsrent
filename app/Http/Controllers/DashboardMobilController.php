@@ -6,6 +6,7 @@ use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Http;
 
 class DashboardMobilController extends Controller
 {
@@ -106,30 +107,60 @@ class DashboardMobilController extends Controller
             return $response;
         }
     }
-
     public function store(Request $request)
     {
-        // Logic to store a new post
-        // You need to adapt this based on your API response structure
-        // For example, you might need to send a POST request to the API to create a new record
+        $request->validate([
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'make' => 'required',
+            'model' => 'required',
+            'year' => 'required|numeric',
+            'trany' => 'required',
+            'fueltype' => 'required',
+            // Aturan validasi lainnya
+        ]);
+        // Menggunakan HTTP Client untuk mengirim POST request ke API
+        $response = Http::post('https://data.opendatasoft.com/api/explore/v2.1/catalog/datasets/all-vehicles-model@public/records', [
+            'make' => $request->input('make'),
+            'model' => $request->input('model'),
+            'year' => $request->input('year'),
+            'trany' => $request->input('trany'),
+            'fueltype' => $request->input('fueltype'),
+            // ... tambahkan field lainnya sesuai kebutuhan
+        ]);
 
-        return Redirect::route('posts.index');
+        // Handle response dari API
+        if ($response->successful()) {
+            // Data berhasil disimpan
+            return Redirect::route('posts.index');
+        } else {
+            // Ada kesalahan, handle sesuai kebutuhan
+            return back()->with('error', 'Failed to save data to the API');
+        }
     }
 
     public function update(Request $request, $id)
     {
-        // Logic to update a post
-        // You need to adapt this based on your API response structure
-        // For example, you might need to send a PUT request to the API to update a record
+        // Menggunakan HTTP Client untuk mengirim PUT request ke API
+        $response = Http::put("https://data.opendatasoft.com/api/explore/v2.1/catalog/datasets/all-vehicles-model@public/records/{$id}", [
+            'make' => $request->input('make'),
+            'model' => $request->input('model'),
+            'year' => $request->input('year'),
+            'trany' => $request->input('trany'),
+            'fueltype' => $request->input('fueltype'),
+            // ... tambahkan field lainnya sesuai kebutuhan
+        ]);
+
+        // Handle response dari API
 
         return Redirect::route('posts.index');
     }
 
     public function destroy($id)
     {
-        // Logic to delete a post
-        // You need to adapt this based on your API response structure
-        // For example, you might need to send a DELETE request to the API to delete a record
+        // Menggunakan HTTP Client untuk mengirim DELETE request ke API
+        $response = Http::delete("https://data.opendatasoft.com/api/explore/v2.1/catalog/datasets/all-vehicles-model@public/records/{$id}");
+
+        // Handle response dari API
 
         return Redirect::route('posts.index');
     }

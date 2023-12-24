@@ -154,10 +154,10 @@
                                 {{ $car->model }}
                             </td>
                             <td class="border-black border-2">
-                                200.000
+                                {{ $car->year }}
                             </td>
                             <td class="border-black border-2">
-                                {{ $car->year }}
+                                Rp. {{ mt_rand(100, 500) }}.000
                             </td>
                             <td class="border-black border-2">
                                 {{ $car->trany }}
@@ -195,5 +195,5 @@
                 {{-- End Isi Table --}}
             </table>
         </div>
-    </div>
-@endsection
+    @endsection
+</div>
