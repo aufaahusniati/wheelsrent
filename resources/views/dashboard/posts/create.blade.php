@@ -14,7 +14,7 @@
         </div>
 
         <div class="flex flex-wrap items-center">
-            <form method="post" action="{{ url('/dashboard/posts') }}" class="pl-72 mx-28" enctype="multipart/form-data">
+            <form method="post" action="{{ route('posts.store') }}" class="pl-72 mx-28" enctype="multipart/form-data">
                 @csrf
                 {{-- tipe --}}
                 <div class="mb-4 ">
@@ -57,16 +57,14 @@
 
                 {{-- Transmision --}}
                 <div class="mb-3">
-                    <label for="title" class="form-label text-2xl">Tansmission</label>
-                    <select class="form-select rounded-lg  ml-4" name="category_id">
-                        {{-- @foreach ($categories as $category)
-                  @if (old('category_id') == $category->id)     
-                  <option value="{{ $category->id }}" selected>{{ $category->name }}</option>
-                  @else
-                  <option value="{{ $category->id }}">{{ $category->name }}</option>                     
-                  @endif
-                  @endforeach --}}
-                    </select>
+                    <label for="trany" class="form-label text-2xl">Transmission</label>
+                    <input type="text" class="form-control rounded-lg ml-4" placeholder="Automatic" id="trany"
+                        name="trany" required autofocus value="">
+                    @error('trany')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                    @enderror
                 </div>
                 {{-- End Transmission --}}
 

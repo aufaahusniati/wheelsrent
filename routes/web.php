@@ -43,15 +43,6 @@ Route::resource('/dashboard/posts', DashboardMobilController::class);
 Route::resource('/dashboard/sewa', DashboardSewaController::class);
 Route::resource('/dashboard/customer', DashboardCustomerController::class);
 
-//dashboard Post
-Route::get('/dashboard/posts', [DashboardMobilController::class, 'index'])->name('posts.index');
-Route::get('/dashboard/posts/create', [DashboardMobilController::class, 'create'])->name('posts.create');
-Route::post('/dashboard/posts', [DashboardMobilController::class, 'store'])->name('posts.store');
-Route::get('/dashboard/posts/{id}', [DashboardMobilController::class, 'show'])->name('posts.show');
-Route::get('/dashboard/posts/{id}/edit', [DashboardMobilController::class, 'edit'])->name('posts.edit');
-Route::put('/dashboard/posts/{id}', [DashboardMobilController::class, 'update'])->name('posts.update');
-Route::delete('/dashboard/posts/{id}', [DashboardMobilController::class, 'destroy'])->name('posts.destroy');
-
 
 //Auth Google
 Route::get('auth/google', [App\Http\Controllers\GoogleController::class, 'redirectToGoogle'])->name('google.login');
