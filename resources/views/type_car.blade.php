@@ -2,18 +2,18 @@
 
 @section('container')
     <!-- Hero Section Start -->
-        <section class="bg-center bg-no-repeat bg-gray-500 bg-blend-multiply mt-24 bg-cover" style="background-image: url('/img/rental.jpg')">
-            <div class="px-4 text-center py-24 lg:py-52 ">
-                <h1 class="mb-4  text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">car rental services</h1>
-                <p class="mb-8 text-lg text-white lg:text-xl sm:px-16 lg:px-48">the ultimate travel experience with car rental transport solutions and professional driver services.</p>
+        <section class="bg-center bg-no-repeat bg-gray-500 bg-blend-multiply mt-24 bg-cover" style="background-image: url('/img/jumbotron3.jpg')">
+            <div class="px-4 text-center py-32 lg:py-[232px] ">
+                <h1 class="mb-4  text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Car Rental Services</h1>
+                <p class="mb-8 text-lg text-white lg:text-xl sm:px-16 lg:px-48">The ultimate travel experience with car rental transport solutions and professional driver services.</p>
             </div>
         </section>
 
         <section id="type" class="pt-24">
             <div class="container">
                 <div class="flex-wrap items-center justify-center text-center">
-                    <h1 class="font-black text-4xl mb-2">Explore the Cars</h1>
-                    <p class="text-base mb-4">WheelsRent have various car classes. Select your perfect fit on.</p>
+                    <h1 class="font-black text-5xl mb-2">Explore the Cars</h1>
+                    <p class="text-lg mb-4">WheelsRent have various car classes. Select your perfect fit on.</p>
                 </div>
             <div class="flex pl-10 md:pl-[180px] pt-3 lg:justify-end lg:pr-5">
                 <div class="flex flex-wrap justify-center" >

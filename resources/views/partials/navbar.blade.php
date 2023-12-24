@@ -16,10 +16,10 @@
                 <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none lg:opacity-100" >
                     <ul class="block lg:flex">
                         <li class="group">
-                            <a href="#home" class="text-base font-bold text-dark decoration-dark py-2 mx-8 flex group-hover:text-primary">Home</a>
+                            <a href="/" class="text-base font-bold text-dark decoration-dark py-2 mx-8 flex group-hover:text-primary">Home</a>
                         </li>
                         <li class="group">
-                            <a href="#about" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary">About Us</a>
+                            <a href="/about_us" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary">About Us</a>
                         </li>
                         <li class="group">
                             <a href="/type_car" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary">Type Car</a>
