@@ -11,8 +11,8 @@
                 <div class="flex flex-wrap duration-700 ease-in-out bg-white" data-carousel-item="active">
                     <img src="/img/slide1.jpg" class="absolute block bg-opacity-10 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                     <div class="absolute w-full self-center ml-[65px] lg:w-1/2">
-                        <h1 class="text-xs font-bold text-white lg:text-4xl">Dapatkan pengalaman terbaik Anda dengan WheelsRent</h1>
-                        <p class="text-xs mt-3 mb-5 mr-20 text-slate-300 leading-relaxed lg:text-lg">Memberikan transportasi dan solusi terbaik untuk menjawab kebutuhan mobilitas anda sehari-hari</p>
+                        <h1 class="text-xs font-bold text-white lg:text-4xl">Get your best experience with WheelsRent</h1>
+                        <p class="text-xs mt-3 mb-5 mr-20 text-slate-300 leading-relaxed lg:text-lg">Providing the best transportation and solutions to meet your everyday mobility needs</p>
 
                         <a href="/reservation" class="text-xs font-semibold text-white bg-primary py-[8px] px-[15px] rounded-full hover:bg-white hover:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8 ">Reservation</a>
                     </div>
@@ -22,8 +22,8 @@
                 <div class="flex flex-wrap duration-700 ease-in-out bg-white" data-carousel-item>
                     <img src="/img/slide2.jpg" class="absolute block w-full bg-opacity-10 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                     <div class="absolute w-full self-center ml-[65px] lg:w-1/2">
-                        <h1 class="text-xs font-bold text-white lg:text-4xl">Jasa Sewa Mobil Bandung</h1>
-                        <p class="text-xs mt-2 mb-3 mr-[80px] text-slate-300 leading-relaxed lg:text-lg">WheelsRent merupakan perusahaan yang bergerak dibidang jasa rental sesuai dengan kebutuhan pelanggan.</p>
+                        <h1 class="text-xs font-bold text-white lg:text-4xl">Car Rental Services in Bandung</h1>
+                        <p class="text-xs mt-2 mb-3 mr-[80px] text-slate-300 leading-relaxed lg:text-lg">WheelsRent is a company engaged in rental services tailored to customer needs.</p>
 
                         <a href="#" class="text-xs font-semibold text-white bg-primary py-[5px] px-[15px] rounded-full hover:bg-white hover:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8">Cek Harga</a>
                     </div>
