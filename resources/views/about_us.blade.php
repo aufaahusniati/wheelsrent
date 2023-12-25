@@ -38,7 +38,7 @@
 {{-- Our Story End --}}
 
 {{-- Our team --}}
-<section class="pb-20 pt-36 w-full">
+<section class="pb-20 pt-32 w-full">
     <div class="flex-wrap items-center justify-center text-center">
         <h1 class="font-black text-4xl mb-2">Meet our amazing team</h1>
         <div class="mb-4 border-orange-400 border-t-4 w-52 lg:w-96 flex flex-wrap items-center justify-center  text-center mx-auto"></div>
@@ -70,5 +70,6 @@
             </div>
         </div>
     </div>
+</section>
     {{-- Our tempnam End --}}
     @endsection
