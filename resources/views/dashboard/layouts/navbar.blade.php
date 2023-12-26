@@ -9,11 +9,7 @@
         <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
             class="text-gray-60 bg-primary bg-opacity-5 hover:bg-primary hover:bg-opacity-5 focus:ring-4 focus:outline-none 
             focus:ring-white font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-primary dark:focus:ring-blue-800"
-            type="button"><svg class="w-7 h-7 text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                fill="none" viewBox="0 0 14 18">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M7 8a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm-2 3h4a4 4 0 0 1 4 4v2H1v-2a4 4 0 0 1 4-4Z" />
-            </svg><span class="text-black font-bold text-2xl mt-1 ml-2"> Admin </span><svg
+            type="button"><img class="w-10 h-10 rounded-full" src="/img/contoh_foto.jpeg" alt="Rounded avatar"><span class="text-black font-bold text-2xl mt-1 ml-2"> Admin </span><svg
                 class="w-5 h-5 pt-3 ml-1 text-gray-800 dark:text-white" aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

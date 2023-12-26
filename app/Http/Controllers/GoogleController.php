@@ -44,9 +44,7 @@ class GoogleController extends Controller
     public function handleGoogleCallback()
     {
         try {
-            // INI EMANG MERAH, TAPI GAK ERROR. BIARIN AJA, JANGAN DIUBAH.
             $google_user = Socialite::driver('google')->stateless()->user();
-            // INI EMANG MERAH, TAPI GAK ERROR. BIARIN AJA, JANGAN DIUBAH.
             $user = User::where('google_id', $google_user->getId())->first();
 
             if (!$user) {

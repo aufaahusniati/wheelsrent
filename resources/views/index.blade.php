@@ -6,10 +6,10 @@
     <div class="container">
         <div id="controls-carousel" class="relative w-full z-0" data-carousel="static">
             <!-- Carousel wrapper -->
-            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <div class="relative h-52 overflow-hidden rounded-lg md:h-96">
                 <!-- Slide 1 -->
-                <div class="flex flex-wrap duration-700 ease-in-out bg-white" data-carousel-item="active">
-                    <img src="/img/slide1.jpg" class="absolute block bg-opacity-10 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <div class="flex flex-wrap duration-700 ease-in-out bg-white bg" data-carousel-item="active">
+                    <img src="/img/slide1.jpg" class="absolute block bg-opacity-10 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 " alt="...">
                     <div class="absolute w-full self-center ml-[65px] lg:w-1/2">
                         <h1 class="text-xs font-bold text-white lg:text-4xl">Get your best experience with WheelsRent</h1>
                         <p class="text-xs mt-3 mb-5 mr-20 text-slate-300 leading-relaxed lg:text-lg">Providing the best transportation and solutions to meet your everyday mobility needs</p>
@@ -25,7 +25,7 @@
                         <h1 class="text-xs font-bold text-white lg:text-4xl">Car Rental Services in Bandung</h1>
                         <p class="text-xs mt-2 mb-3 mr-[80px] text-slate-300 leading-relaxed lg:text-lg">WheelsRent is a company engaged in rental services tailored to customer needs.</p>
 
-                        <a href="#" class="text-xs font-semibold text-white bg-primary py-[5px] px-[15px] rounded-full hover:bg-white hover:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8">Cek Harga</a>
+                        <a href="#" class="text-xs font-semibold text-white bg-primary py-[5px] px-[15px] rounded-full hover:bg-white hover:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8">Prices</a>
                     </div>
                 </div>
             </div>
@@ -99,10 +99,10 @@
 <!-- Tentang Kami Section Start -->
 <section id="about" class="pt-30  ">
     <div class="container">
-        <svg class="-mx-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <svg class="-mx-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#EEF5FF" fill-opacity="1" d="M0,224L26.7,213.3C53.3,203,107,181,160,176C213.3,171,267,181,320,186.7C373.3,192,427,192,480,165.3C533.3,139,587,85,640,101.3C693.3,117,747,203,800,245.3C853.3,288,907,288,960,240C1013.3,192,1067,96,1120,96C1173.3,96,1227,192,1280,234.7C1333.3,277,1387,267,1413,261.3L1440,256L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
         </svg>
-        <div class="px-5 -mx-10 gap-2 lg:grid lg:grid-cols-2 bg-[#EEF5FF]">
+        <div class="px-5 -mx-4 gap-2 lg:grid lg:grid-cols-2 bg-[#EEF5FF]">
             <img class="h-auto max-w-full rounded-lg" src="/img/tentangkami.png" alt="">
             <div>
                 <p class="text-center text-slate-400">about</p>
@@ -119,7 +119,7 @@
 
         </div>
         <div>
-            <svg class="-mx-10 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <svg class="-mx-4 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#EEF5FF" fill-opacity="1" d="M0,128L26.7,138.7C53.3,149,107,171,160,160C213.3,149,267,107,320,101.3C373.3,96,427,128,480,170.7C533.3,213,587,267,640,288C693.3,309,747,299,800,288C853.3,277,907,267,960,272C1013.3,277,1067,299,1120,277.3C1173.3,256,1227,192,1280,149.3C1333.3,107,1387,85,1413,74.7L1440,64L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path>
             </svg>
         </div>
@@ -205,7 +205,7 @@
                         <!-- Button Reservasi -->
                         <div class="mt-4 flex items-center justify-center">
                             <a href="#" class="inline-flex items-center px-2 py-1 text-sm font-medium  text-white bg-primary rounded-full border-2 border-primary hover:bg-white hover:text-primary focus:z-10 focus:ring-2 focus:ring-primary focus:text-primary">
-                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2 " xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
                                     <path fill="white" d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
                                 </svg>
                                 <p class="px-2">Reservation</p>
@@ -229,8 +229,8 @@
 {{-- Top Cars End --}}
 
 <!-- testimoni -->
-<section id="testimoni" class="pt-36 pb-32 bg-slate-200">
-    <div class="container mx-auto text-center text-sm mt-6 bg-slate-100">
+<section id="testimoni" class="py-12 bg-slate-200">
+    <div class="flex flex-wrap justify-center mx-10 text-center text-sm mt-6 bg-slate-100 shadow-md shadow-gray-400 rounded-md">
         <div class="container mx-auto py-8 px-4">
             <div>
                 <p class="text-xs mb-2">TESTIMONIALS</p>
