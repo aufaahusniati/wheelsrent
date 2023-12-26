@@ -1,13 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Laravel\Socialite\Facades\Socialite;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\DashboardMakeController;
 use App\Http\Controllers\DashboardSewaController;
 use App\Http\Controllers\DashboardMobilController;
 use App\Http\Controllers\DashboardCustomerController;
-use Laravel\Socialite\Facades\Socialite;
 // use App\Http\Controllers\LiveSearchController;
 /*
 |--------------------------------------------------------------------------
@@ -66,6 +67,7 @@ Route::get('/dashboard', function() {
     })->middleware('auth');
 
 Route::middleware(['auth'])->group(function() {
+    Route::resource('/dashboard/make', DashboardMakeController::class)->middleware('auth');
     Route::resource('/dashboard/posts', DashboardMobilController::class)->middleware('auth');
     Route::resource('/dashboard/sewa', DashboardSewaController::class)->middleware('auth');
     Route::resource('/dashboard/customer', DashboardCustomerController::class)->middleware('auth');
