@@ -52,15 +52,15 @@
                     <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
                         <li>
                             <a href="#"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Recent</a>
+                                class="block px-4 py-2 hover:bg-gray-100">Recent</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">A-Z</a>
+                                class="block px-4 py-2 hover:bg-gray-100">A-Z</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Z-A</a>
+                                class="block px-4 py-2 hover:bg-gray-100">Z-A</a>
                         </li>
                     </ul>
                 </div>
@@ -85,7 +85,7 @@
                 <!-- Dropdown menu -->
                 <div id="dropdownDefaultCheckbox"
                     class="z-10 hidden w-48 bg-white divide-y divide-gray-100 rounded-lg shadow ">
-                    <ul class="p-3 space-y-3 text-sm text-gray-700 dark:text-gray-200"
+                    <ul class="p-3 space-y-3 text-sm text-gray-700"
                         aria-labelledby="dropdownCheckboxButton">
                         <li>
                             <div class="flex items-center">
@@ -112,7 +112,7 @@
         {{-- head table --}}
         <div class="relative px-24 overflow-x-auto pb-10">
             <table
-                class="w-full text-lg text-center rtl:text-right rounded-lg text-black dark:text-white border-x-2 border-y-2 border-black">
+                class="w-full text-lg text-center rtl:text-right rounded-lg text-black border-x-2 border-y-2 border-black">
                 <thead class="text-base border-b-2 border-black text-black uppercase bg-primary bg-opacity-70 ">
                     <tr>
                         <th scope="col" class="px-6 py-3 border-black border-2">
