@@ -26,13 +26,13 @@
     {{-- End Navbar --}}
 
     {{-- Sidebar --}}
-      <div class="fixed left-0 top-0 w-64 h-full p-4 border-r bg-primary bg-opacity-5">
+    <div class="fixed ml-5 bg-primary top-2 h-[565px] rounded-3xl p-6 border-r">
           @include('dashboard.layouts.sidebar')
       </div>
     {{-- End Sidebar --}}
 
     {{-- Content --}}
-      <main class=" w-[calc(100%-256px)] ml-64 ">
+      <main class=" w-[calc(100%-256px)] ml-60">
           @yield('container')  
       </main>
     {{-- End Content --}}
