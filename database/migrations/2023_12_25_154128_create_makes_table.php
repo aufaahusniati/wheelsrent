@@ -11,12 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('car', function (Blueprint $table) {
+        Schema::create('makes', function (Blueprint $table) {
             $table->id();
-            $table->string('brand'); // Merk Mobil
-            $table->string('model'); // Model Mobil
-            $table->year('year'); // Tahun Mobil
-            $table->string('fuel_type'); // Tipe Bahan Bakar Mobil
+            $table->string('make_name');
             $table->timestamps();
         });
     }
@@ -26,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('car');
+        Schema::dropIfExists('makes');
     }
 };
