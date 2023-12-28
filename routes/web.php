@@ -23,17 +23,17 @@ use App\Http\Controllers\DashboardCustomerController;
 // Home
 Route::get('/', function () {
     return view('index');
-  });
+});
 
 // Type Car
 Route::get('/type_car', function () {
     return view('type_car');
-}); 
+});
 
 // About us
 Route::get('/about_us', function () {
     return view('about_us');
-}); 
+});
 
 // reservation
 Route::get('/reservation', function () {
@@ -41,7 +41,7 @@ Route::get('/reservation', function () {
 });
 
 // Login Group
-Route::middleware(['guest'])->group(function(){
+Route::middleware(['guest'])->group(function () {
     // Login
     Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
     Route::post('/login', [LoginController::class, 'authenticate']);
@@ -62,16 +62,18 @@ Route::get('/register/google', [GoogleController::class, 'index']);
 Route::post('/register/google', [GoogleController::class, 'store']);
 
 // Dashboard
-Route::get('/dashboard', function() {
+Route::get('/dashboard', function () {
     return view('dashboard.index');
-    })->middleware('auth');
+})->middleware('auth');
 
-Route::middleware(['auth'])->group(function() {
+Route::middleware(['auth'])->group(function () {
     Route::resource('/dashboard/make', DashboardMakeController::class)->middleware('auth');
     Route::resource('/dashboard/car', DashboardCarController::class)->middleware('auth');
     Route::resource('/dashboard/reservation', ReservationController::class)->middleware('auth');
     Route::resource('/dashboard/customer', DashboardCustomerController::class)->middleware('auth');
 });
+
+Route::get('/dashboard/car/{id}/pdf', [DashboardCarController::class, 'generatePDF']);
 
 // Dashboard Post
 // Route::get('/dashboard/posts', [DashboardMobilController::class, 'index'])->name('posts.index');
