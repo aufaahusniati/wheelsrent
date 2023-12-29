@@ -38,38 +38,41 @@
 {{-- Our Story End --}}
 
 {{-- Our team --}}
-<section class="pb-20 pt-32 w-full">
+<section class="pb-20 pt-32 ">
     <div class="flex-wrap items-center justify-center text-center">
         <h1 class="font-black text-4xl mb-2">Meet our amazing team</h1>
         <div class="mb-4 border-orange-400 border-t-4 w-52 lg:w-96 flex flex-wrap items-center justify-center  text-center mx-auto"></div>
         <p class="text-xs mt-5 mb-7 text-dark lg:text-lg mx-4">Please meet some of our team members.</p>
-        <div class="grid grid-cols-4 gap-4 mx-3">
-            <div class="mb-2">
-                <img class="h-auto max-w-full rounded-2xl shadow-md shadow-gray-600" src="/img/story_rent.jpg" alt="">
-                <h1 class="font-black text-4xl mb-4 mt-6">Aufaa Husniati</h1>
-                <h4 class="italic-h4">Project manager</h4>
-                <p>Full-stack Developer</p>
+        <div class="flex flex-wrap justify-center">
+            <div class="grid grid-cols-1 lg:grid lg:grid-cols-4 gap-4 ">
+                <div class="mb-2">
+                    <img class="h-auto max-w-xs rounded-2xl shadow-md shadow-gray-600" src="/img/story_rent.jpg" alt="">
+                    <h1 class="font-black text-xl mt-6">Aufaa Husniati</h1>
+                    <h4 class="italic-h4">Project manager</h4>
+                    <p>Full-stack Developer</p>
             </div>
-            <div class="mb-2">
-                <img class="h-auto max-w-full rounded-2xl shadow-md shadow-gray-600" src="/img/story_rent.jpg" alt="">
-                <h1 class="font-black text-4xl mb-4 mt-6">Widya Indrianti</h1>
-                <h4 class="italic-h4">Member</h4>
-                <p>Front-End Developer</p>
-            </div>
-            <div class="mb-2">
-                <img class="h-auto max-w-full rounded-2xl shadow-md shadow-gray-600" src="/img/story_rent.jpg" alt="">
-                <h1 class="font-black text-4xl mb-4 mt-6">Daffa Gimnastiar</h1>
-                <h4 class="italic-h4">Member</h4>
-                <p>Front-End Developer</p>
-            </div>
-            <div class="mb-2">
-                <img class="h-auto max-w-full rounded-2xl shadow-md shadow-gray-600" src="/img/story_rent.jpg" alt="">
-                <h1 class="font-black text-4xl mb-4 mt-6">Wildan N. Reliyanto</h1>
-                <h4 class="italic-h4">Member</h4>
-                <p>Back-End Developer</p>
+                <div class="mb-2">
+                    <img class="h-auto max-w-xs rounded-2xl shadow-md shadow-gray-600" src="/img/story_rent.jpg" alt="">
+                    <h1 class="font-black text-xl  mt-6">Widya Dwi Indrianti</h1>
+                    <h4 class="italic-h4">Member</h4>
+                    <p>Front-End Developer</p>
+                </div>
+                <div class="mb-2">
+                    <img class="h-auto max-w-xs rounded-2xl shadow-md shadow-gray-600" src="/img/story_rent.jpg" alt="">
+                    <h1 class="font-black text-xl mt-6">Daffa Gimmnastiar</h1>
+                    <h4 class="italic-h4">Member</h4>
+                    <p>Front-End Developer</p>
+                </div>
+                <div class="mb-2">
+                    <img class="h-auto max-w-xs rounded-2xl shadow-md shadow-gray-600" src="/img/story_rent.jpg" alt="">
+                    <h1 class="font-black text-xl mt-6">Wildan N. R</h1>
+                    <h4 class="italic-h4">Member</h4>
+                    <p>Back-End Developer</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
-    {{-- Our tempnam End --}}
-    @endsection
+{{-- Our team End --}}
+
+@endsection

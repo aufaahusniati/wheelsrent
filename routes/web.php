@@ -68,4 +68,8 @@ Route::middleware(['auth'])->group(function() {
     Route::resource('/dashboard/car', DashboardCarController::class);
     Route::resource('/reservation', ReservationController::class);
     Route::resource('/dashboard/reservation', ReservationController::class);
+    Route::resource('/dashboard/news', DashboardNewsController::class);
 });
+
+Route::get('/dashboard/car/{id}/pdf', [DashboardCarController::class, 'generatePDF']);
+Route::get('/dashboard/car', [DashboardCarController::class, 'index'])->name('cars.index');

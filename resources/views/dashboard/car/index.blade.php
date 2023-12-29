@@ -40,13 +40,16 @@
                 <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
                     <ul class="py-2 text-sm text-gray-700 " aria-labelledby="dropdownDefaultButton">
                         <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Recent</a>
+                            <a href="{{ route('cars.index', ['sort' => 'recent']) }}"
+                                class="block px-4 py-2 @if ($currentSort == 'recent') bg-gray-100 @endif">Recent</a>
                         </li>
                         <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">A-Z</a>
+                            <a href="{{ route('cars.index', ['sort' => 'asc']) }}"
+                                class="block px-4 py-2 @if ($currentSort == 'asc') bg-gray-100 @endif">A-Z</a>
                         </li>
                         <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Z-A</a>
+                            <a href="{{ route('cars.index', ['sort' => 'desc']) }}"
+                                class="block px-4 py-2 @if ($currentSort == 'desc') bg-gray-100 @endif">Z-A</a>
                         </li>
                     </ul>
                 </div>
@@ -184,4 +187,3 @@
         </div>
     </div>
 @endsection
-
