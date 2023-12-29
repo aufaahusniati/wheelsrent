@@ -70,21 +70,10 @@ Route::get('/dashboard', function () {
 Route::middleware(['auth'])->group(function () {
     Route::resource('/dashboard/make', DashboardMakeController::class)->middleware('auth');
     Route::resource('/dashboard/car', DashboardCarController::class)->middleware('auth');
-    Route::resource('/dashboard/reservation', ReservationController::class)->middleware('auth');
-    Route::resource('/dashboard/reservation', DashboardCustomerController::class)->middleware('auth');
+    Route::resource('/reservation', ReservationController::class);
+    Route::resource('/dashboard/reservation', ReservationController::class);
     Route::resource('/dashboard/news', DashboardNewsController::class)->middleware('auth');
 });
 
 Route::get('/dashboard/car/{id}/pdf', [DashboardCarController::class, 'generatePDF']);
 Route::get('/dashboard/car', [DashboardCarController::class, 'index'])->name('cars.index');
-// Dashboard Post
-// Route::get('/dashboard/posts', [DashboardMobilController::class, 'index'])->name('posts.index');
-// Route::get('/dashboard/posts/create', [DashboardMobilController::class, 'create'])->name('posts.create');
-// Route::post('/dashboard/posts', [DashboardMobilController::class, 'store'])->name('posts.store');
-// Route::get('/dashboard/posts/{id}', [DashboardMobilController::class, 'show'])->name('posts.show');
-// Route::get('/dashboard/posts/{id}/edit', [DashboardMobilController::class, 'edit'])->name('posts.edit');
-// Route::put('/dashboard/posts/{id}', [DashboardMobilController::class, 'update'])->name('posts.update');
-// Route::delete('/dashboard/posts/{id}', [DashboardMobilController::class, 'destroy'])->name('posts.destroy');
-
-// Live search
-// Route::get('/', [LiveSearchController::class, 'index']);
