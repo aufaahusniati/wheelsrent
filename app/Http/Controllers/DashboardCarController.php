@@ -13,11 +13,36 @@ class DashboardCarController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
+        $sortOptions = ['recent', 'asc', 'desc'];
+        $defaultSort = 'recent';
+
+        // Check if the 'sort' query parameter is valid
+        $sort = $request->input('sort');
+        $sort = in_array($sort, $sortOptions) ? $sort : $defaultSort;
+
+        $cars = Car::with('makes');
+
+        // Handle sorting
+        switch ($sort) {
+            case 'asc':
+                $cars->orderBy('model', 'asc');
+                break;
+            case 'desc':
+                $cars->orderBy('model', 'desc');
+                break;
+            default:
+                $cars->latest();
+                break;
+        }
+
+        $cars = $cars->get();
+
         return view('dashboard.car.index', [
             'makes' => Make::all(),
-            'cars' => Car::all()
+            'cars' => $cars,
+            'currentSort' => $sort,
         ]);
     }
 

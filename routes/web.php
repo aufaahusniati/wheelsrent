@@ -74,7 +74,7 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::get('/dashboard/car/{id}/pdf', [DashboardCarController::class, 'generatePDF']);
-
+Route::get('/dashboard/car', [DashboardCarController::class, 'index'])->name('cars.index');
 // Dashboard Post
 // Route::get('/dashboard/posts', [DashboardMobilController::class, 'index'])->name('posts.index');
 // Route::get('/dashboard/posts/create', [DashboardMobilController::class, 'create'])->name('posts.create');
