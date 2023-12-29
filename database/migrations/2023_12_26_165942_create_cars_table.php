@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('year');
             $table->string('transmission');
             $table->string('fuel');
-            $table->integer('price');
+            $table->string('price');
             $table->string('image');
             $table->timestamps();
         });
