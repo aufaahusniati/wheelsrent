@@ -14,7 +14,7 @@
                         <h1 class="text-xs font-bold text-white lg:text-4xl">Get your best experience with WheelsRent</h1>
                         <p class="text-xs mt-3 mb-5 mr-20 text-slate-300 leading-relaxed lg:text-lg">Providing the best transportation and solutions to meet your everyday mobility needs</p>
 
-                        <a href="/reservation/create" class="text-xs font-semibold text-white bg-primary py-[8px] px-[15px] rounded-full hover:bg-white hover:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8 ">Reservation</a>
+                        <a href="/reservation" class="text-xs font-semibold text-white bg-primary py-[8px] px-[15px] rounded-full hover:bg-white hover:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8 ">Reservation</a>
                     </div>
                 </div>
 
@@ -25,7 +25,7 @@
                         <h1 class="text-xs font-bold text-white lg:text-4xl">Car Rental Services in Bandung</h1>
                         <p class="text-xs mt-2 mb-3 mr-[80px] text-slate-300 leading-relaxed lg:text-lg">WheelsRent is a company engaged in rental services tailored to customer needs.</p>
 
-                        <a href="/type" class="text-xs font-semibold text-white bg-primary py-[5px] px-[15px] rounded-full hover:bg-white hover:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8">Prices</a>
+                        <a href="#" class="text-xs font-semibold text-white bg-primary py-[5px] px-[15px] rounded-full hover:bg-white hover:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8">Prices</a>
                     </div>
                 </div>
             </div>
@@ -97,7 +97,7 @@
 <!-- Cards Section End -->
 
 <!-- Tentang Kami Section Start -->
-<section id="about" class="pt-30  ">
+<section id="about" class="pt-32 ">
     <div class="container">
         <svg class="-mx-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#EEF5FF" fill-opacity="1" d="M0,224L26.7,213.3C53.3,203,107,181,160,176C213.3,171,267,181,320,186.7C373.3,192,427,192,480,165.3C533.3,139,587,85,640,101.3C693.3,117,747,203,800,245.3C853.3,288,907,288,960,240C1013.3,192,1067,96,1120,96C1173.3,96,1227,192,1280,234.7C1333.3,277,1387,267,1413,261.3L1440,256L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
@@ -145,17 +145,13 @@
                 </button>
             </div>
         </div>
-
         <div id="sliderContainer" class="w-full overflow-hidden">
             <ul id="slider" class="flex w-full duration-700">
                 <li class="p-5">
-                    {{-- @foreach ($cars as $car) --}}
                     <div class="border rounded-lg p-5 h-full">
-                          {{-- @if($car->image) --}}
-                        <img class="h-50 w-full object-cover rounded-md" src="{{-- {{ asset('storage/' . $car->image) }} --}}" alt="">
-                        {{-- @endif --}}
+                        <img class="h-50 w-full object-cover rounded-md" src="/img/nissan.jpg" alt="">
                         <!-- Model Car -->
-                        <h5 class="mb-2 mt-2 text-2xl font-bold tracking-tight text-gray-900">{{-- {{ $car->model }} --}} </h5>
+                        <h5 class="mb-2 mt-2 text-2xl font-bold tracking-tight text-gray-900">Skyline GT</h5>
                         <div class="gap-4 lg:grid lg:grid-cols-2">
                             <!-- Make Car-->
                             <div class="flex items-center">
@@ -166,7 +162,7 @@
                                 </div>
                                 <div class="m-2 text-[12px]">
                                     <p>MAKE</p>
-                                    <p class="font-semibold">{{-- {{ $car->make->make_name }} --}}</p>
+                                    <p class="font-semibold">NISSAN</p>
                                 </div>
                             </div>
                             <!-- Transmission -->
@@ -178,7 +174,7 @@
                                 </div>
                                 <div class="m-2 text-[12px]">
                                     <p>TRANSMISSION</p>
-                                    <p class="font-semibold">{{-- {{ $car->transmission }} --}}</p>
+                                    <p class="font-semibold">MATIC</p>
                                 </div>
                             </div>
                             <!-- Fuel -->
@@ -190,7 +186,7 @@
                                 </div>
                                 <div class="m-2 text-[12px]">
                                     <p>FUEL</p>
-                                    <p class="font-semibold">{{-- {{ $car->fuel }} --}}</p>
+                                    <p class="font-semibold">BENSIN</p>
                                 </div>
                             </div>
                             <!-- Price -->
@@ -202,13 +198,13 @@
                                 </div>
                                 <div class="m-2 text-[12px]">
                                     <p>PRICE</p>
-                                    <p class="font-semibold">Rp. {{-- {{ $car->price }} --}}</p>
+                                    <p class="font-semibold">150.000</p>
                                 </div>
                             </div>
                         </div>
                         <!-- Button Reservasi -->
                         <div class="mt-4 flex items-center justify-center">
-                            <a href="/reservation" class="inline-flex items-center px-2 py-1 text-sm font-medium  text-white bg-primary rounded-full border-2 border-primary hover:bg-white hover:text-primary focus:z-10 focus:ring-2 focus:ring-primary focus:text-primary">
+                            <a href="#" class="inline-flex items-center px-2 py-1 text-sm font-medium  text-white bg-primary rounded-full border-2 border-primary hover:bg-white hover:text-primary focus:z-10 focus:ring-2 focus:ring-primary focus:text-primary">
                                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2 " xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
                                     <path fill="white" d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
                                 </svg>
@@ -234,46 +230,51 @@
 
 {{-- News --}}
 <section id="news" class="pt-32 pb-6" >
-    <div class="container">
-        <div class="flex-wrap items-center justify-center text-center pb-4">
-            <p class="text-gray-400 text-sm mb-2">NEWS CARS</p>
-            <div class="mb-4 border-orange-400 border-t-4 w-20 flex flex-wrap items-center justify-center  text-center mx-auto"></div>
-            <h1 class="font-black text-4xl mb-2">Explore the News Cars</h1>
-            <p class="text-base mb-4">news about cars today.</p>
-        </div>
+<div class="container">
+    <div class="flex-wrap items-center justify-center text-center pb-4">
+        <p class="text-gray-400 text-sm mb-2">NEWS CARS</p>
+        <div class="mb-4 border-orange-400 border-t-4 w-20 flex flex-wrap items-center justify-center  text-center mx-auto"></div>
+        <h1 class="font-black text-4xl mb-2">Explore the News Cars</h1>
+        <p class="text-base mb-4">news about cars today.</p>
+    </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div>
-                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
-                    <img class="rounded-t-lg" src="/img/nissan.jpg" alt="" />
-                <div class="p-5">  
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary">Noteworthy technology acquisitions 2021</h5>
-                    
-                    <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>       
-                </div>
-            </div>
-            </div>
-            <div>
-                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
-                    <img class="rounded-t-lg" src="/img/nissan.jpg" alt="" />
-                <div class="p-5">  
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary">Noteworthy technology acquisitions 2021</h5>
-                    
-                    <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>       
-                </div>
-            </div>
-            </div>
-            <div>
-                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
-                        <img class="rounded-t-lg" src="/img/nissan.jpg" alt="" />
-                    <div class="p-5">  
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary">Noteworthy technology acquisitions 2021</h5>
-                        
-                        <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>       
-                    </div>
-                </div>
-            </div>  
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+    <div>
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <img class="rounded-t-lg" src="/img/nissan.jpg" alt="" />
+        <div class="p-5">  
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary">Noteworthy technology acquisitions 2021</h5>
+            
+            <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>       
         </div>
+    </div>
+    </div>
+    <div>
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <img class="rounded-t-lg" src="/img/nissan.jpg" alt="" />
+        <div class="p-5">  
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary">Noteworthy technology acquisitions 2021</h5>
+            
+            <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>       
+        </div>
+    </div>
+    </div>
+    <div>
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <img class="rounded-t-lg" src="/img/nissan.jpg" alt="" />
+            <div class="p-5">  
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary">Noteworthy technology acquisitions 2021</h5>
+                
+                <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>       
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+
+        
+      
     </div>
 </section>
 {{-- End News --}}
@@ -436,5 +437,8 @@
     </div>
 </section>
 {{-- Testimoni End --}}
+
+
+
 
 @endsection

@@ -52,7 +52,7 @@ class DashboardCarController extends Controller
     public function create()
     {
         return view('dashboard.car.create', [
-            'makes'=> Make::all()
+            'makes' => Make::all()
         ]);
     }
 
@@ -71,7 +71,7 @@ class DashboardCarController extends Controller
             'make_id' => 'required',
         ]);
 
-        if($request->file('image')) {
+        if ($request->file('image')) {
             $validatedData['image'] = $request->file('image')->store('car-images');
         }
 
@@ -86,7 +86,7 @@ class DashboardCarController extends Controller
     public function show(Car $car)
     {
         return view('dashboard.car.show', [
-            'car'=> $car
+            'car' => $car
         ]);
     }
 
@@ -118,8 +118,8 @@ class DashboardCarController extends Controller
 
         $validatedData = $request->validate($rules);
 
-        if($request->file('image')) {
-            if($request->oldImage) {
+        if ($request->file('image')) {
+            if ($request->oldImage) {
                 Storage::delete($request->oldImage);
             }
             $validatedData['image'] = $request->file('image')->store('car-images');
@@ -136,7 +136,7 @@ class DashboardCarController extends Controller
      */
     public function destroy(Car $car)
     {
-        if($car->image) {
+        if ($car->image) {
             Storage::delete($car->image);
         }
         Car::destroy($car->id);

@@ -73,6 +73,5 @@
         </div>
     </div>
 </section>
-{{-- Our team End --}}
-
-@endsection
+    {{-- Our team End --}}
+    @endsection
