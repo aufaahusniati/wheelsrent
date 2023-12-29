@@ -8,8 +8,6 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardCarController;
 use App\Http\Controllers\DashboardMakeController;
 use App\Http\Controllers\ReservationController;
-use App\Http\Controllers\DashboardCustomerController;
-// use App\Http\Controllers\LiveSearchController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -53,7 +51,6 @@ Route::middleware(['guest'])->group(function(){
 // Logout
 Route::post('/logout', [LoginController::class, 'logout']);
 
-
 //Auth Google
 Route::get('/auth/google', [GoogleController::class, 'redirectToGoogle'])->name('google.login');
 Route::get('/auth/google/call-back', [GoogleController::class, 'handleGoogleCallback']);
@@ -67,20 +64,8 @@ Route::get('/dashboard', function() {
     })->middleware('auth');
 
 Route::middleware(['auth'])->group(function() {
-    Route::resource('/dashboard/make', DashboardMakeController::class)->middleware('auth');
-    Route::resource('/dashboard/car', DashboardCarController::class)->middleware('auth');
-    Route::resource('/dashboard/reservation', ReservationController::class)->middleware('auth');
-    Route::resource('/dashboard/customer', DashboardCustomerController::class)->middleware('auth');
+    Route::resource('/dashboard/make', DashboardMakeController::class);
+    Route::resource('/dashboard/car', DashboardCarController::class);
+    Route::resource('/reservation', ReservationController::class);
+    Route::resource('/dashboard/reservation', ReservationController::class);
 });
-
-// Dashboard Post
-// Route::get('/dashboard/posts', [DashboardMobilController::class, 'index'])->name('posts.index');
-// Route::get('/dashboard/posts/create', [DashboardMobilController::class, 'create'])->name('posts.create');
-// Route::post('/dashboard/posts', [DashboardMobilController::class, 'store'])->name('posts.store');
-// Route::get('/dashboard/posts/{id}', [DashboardMobilController::class, 'show'])->name('posts.show');
-// Route::get('/dashboard/posts/{id}/edit', [DashboardMobilController::class, 'edit'])->name('posts.edit');
-// Route::put('/dashboard/posts/{id}', [DashboardMobilController::class, 'update'])->name('posts.update');
-// Route::delete('/dashboard/posts/{id}', [DashboardMobilController::class, 'destroy'])->name('posts.destroy');
-
-// Live search
-// Route::get('/', [LiveSearchController::class, 'index']);

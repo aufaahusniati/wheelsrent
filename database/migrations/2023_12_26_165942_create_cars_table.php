@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('make_id')->references('id')->on('makes');
             $table->string('model');
-            $table->string('year');
+            $table->integer('year');
             $table->string('transmission');
             $table->string('fuel');
             $table->integer('price');

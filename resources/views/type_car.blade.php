@@ -34,7 +34,6 @@
                      {{-- end search --}}
                 
                      {{-- Sort by --}}
-                     
                         <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-white bg-blue-700 
                             hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 mx-3 text-center 
                            flex items-center" type="button">Sort by 
@@ -43,16 +42,16 @@
                                 </svg>
                         </button>
                     <!-- Dropdown menu -->
-                        <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                        <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                            <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownDefaultButton">
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Racent</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Racent</a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">A-Z</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">A-Z</a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Z-A</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Z-A</a>
                             </li>
                             </ul>
                         </div> 
@@ -73,31 +72,36 @@
                             
                     <!-- Dropdown menu -->
                         <div id="dropdownDefaultCheckbox" class="z-10 hidden w-48 bg-white divide-y divide-gray-100 rounded-lg shadow ">
-                            <ul class="p-3 space-y-3 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownCheckboxButton">
+                            <ul class="p-3 space-y-3 text-sm text-gray-700" aria-labelledby="dropdownCheckboxButton">
                             <li>
                                 <div class="flex items-center">
-                                <input id="checkbox-item-1" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                                <label for="checkbox-item-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Make</label>
+                                <input id="checkbox-item-1" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded">
+                                <label for="checkbox-item-1" class="ms-2 text-sm font-medium text-gray-900">Make</label>
                                 </div>
                             </li>
                             <li>
                                 <div class="flex items-center">
-                                    <input checked id="checkbox-item-2" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                                    <label for="checkbox-item-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Model</label>
+                                    <input checked id="checkbox-item-2" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded">
+                                    <label for="checkbox-item-2" class="ms-2 text-sm font-medium text-gray-900">Model</label>
                                 </div>
                             </li>
                             </ul>
                         </div>
-                    
                      {{-- end filter by --}}
                 </div>
+
+                {{-- Cards --}}
+                {{-- @foreach ($cars as $car) --}}
                 <div class="gap-3 lg:grid lg:grid-cols-3">
                     <!-- Cards 1-->
+                    {{-- @if($car->image) --}}
                     <div class="max-w-sm mx-auto my-6 bg-white border border-gray-200 rounded-lg shadow-xl">
-                        <img class="rounded-t-lg" src="/img/nissan.jpg" alt="" />
+                        {{-- Image --}}
+                        <img class="rounded-t-lg" src="{{-- {{ asset('storage/' . $car->image) }} --}}"/>
+                    {{-- @endif --}}
                         <div class="p-5">
                             <!-- Model Car -->
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Skyline GT</h5>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{{-- {{ $car->model }} --}}</h5>
                             <div class="gap-4 lg:grid lg:grid-cols-2">
                                 <!-- Make Car-->
                                 <div class="flex items-center">
@@ -108,7 +112,7 @@
                                     </div>
                                     <div class="m-2 text-[12px]">
                                         <p>MAKE</p>
-                                        <p class="font-semibold">NISSAN</p>
+                                        <p class="font-semibold"> {{-- {{ $car->make->make_name }} --}}</p>
                                     </div>
                                 </div>
                                 <!-- Transmission -->
@@ -118,7 +122,7 @@
                                     </div>
                                     <div class="m-2 text-[12px]">
                                         <p>TRANSMISSION</p>
-                                        <p class="font-semibold">MATIC</p>
+                                        <p class="font-semibold">{{-- {{ $car->transmission }} --}}</p>
                                     </div>
                                 </div>
                                 <!-- Fuel -->
@@ -130,7 +134,7 @@
                                     </div>
                                     <div class="m-2 text-[12px]">
                                         <p>FUEL</p>
-                                        <p class="font-semibold">BENSIN</p>
+                                        <p class="font-semibold">{{-- {{ $car->fuel }} --}}</p>
                                     </div>
                                 </div>
                                 <!-- Price -->
@@ -142,13 +146,13 @@
                                     </div>
                                     <div class="m-2 text-[12px]">
                                         <p>PRICE</p>
-                                        <p class="font-semibold">150.000</p>
+                                        <p class="font-semibold">Rp. {{-- {{ $car->price }} --}}</p>
                                     </div>
                                 </div>
                             </div>
                             <!-- Button Reservasi -->
                             <div class="flex justify-center items-center mt-4 mr-[40px]">
-                                <a href="#" class="inline-flex items-center px-2 py-1 text-sm font-medium  text-white bg-primary rounded-full border-2 border-primary hover:bg-white hover:text-primary focus:z-10 focus:ring-2 focus:ring-primary focus:text-primary">
+                                <a href="/reservation" class="inline-flex items-center px-2 py-1 text-sm font-medium  text-white bg-primary rounded-full border-2 border-primary hover:bg-white hover:text-primary focus:z-10">
                                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
                                         <path fill="white" d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/>
                                     </svg>
@@ -158,8 +162,9 @@
                         </div>
                     </div>  
                 </div>
+                {{-- @endforeach --}}
             </div>
-        </section> 
+    </section> 
 
     <!-- Hero Section End -->
 @endsection

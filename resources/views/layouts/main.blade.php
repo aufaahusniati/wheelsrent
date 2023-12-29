@@ -20,8 +20,9 @@
     @yield('container')
     @include('partials.footer')
 </body>
-{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/datepicker.min.js"></script> --}}
-<script src="/js/script.js"></script>
-<script src="/js/main.js"></script>
 
+<script src="/js/script.js"></script>
+
+{{-- date picker --}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/datepicker.min.js"></script>
 </html>

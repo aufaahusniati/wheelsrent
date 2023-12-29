@@ -13,5 +13,6 @@ class Car extends Model
     {
         return $this->belongsTo(Make::class, 'make_id', 'id');
     }
+    
 }
 

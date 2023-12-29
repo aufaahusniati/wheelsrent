@@ -14,7 +14,7 @@
                         <h1 class="text-xs font-bold text-white lg:text-4xl">Get your best experience with WheelsRent</h1>
                         <p class="text-xs mt-3 mb-5 mr-20 text-slate-300 leading-relaxed lg:text-lg">Providing the best transportation and solutions to meet your everyday mobility needs</p>
 
-                        <a href="/reservation" class="text-xs font-semibold text-white bg-primary py-[8px] px-[15px] rounded-full hover:bg-white hover:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8 ">Reservation</a>
+                        <a href="/reservation/create" class="text-xs font-semibold text-white bg-primary py-[8px] px-[15px] rounded-full hover:bg-white hover:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8 ">Reservation</a>
                     </div>
                 </div>
 
@@ -25,7 +25,7 @@
                         <h1 class="text-xs font-bold text-white lg:text-4xl">Car Rental Services in Bandung</h1>
                         <p class="text-xs mt-2 mb-3 mr-[80px] text-slate-300 leading-relaxed lg:text-lg">WheelsRent is a company engaged in rental services tailored to customer needs.</p>
 
-                        <a href="#" class="text-xs font-semibold text-white bg-primary py-[5px] px-[15px] rounded-full hover:bg-white hover:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8">Prices</a>
+                        <a href="/type" class="text-xs font-semibold text-white bg-primary py-[5px] px-[15px] rounded-full hover:bg-white hover:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8">Prices</a>
                     </div>
                 </div>
             </div>
@@ -145,13 +145,17 @@
                 </button>
             </div>
         </div>
+
         <div id="sliderContainer" class="w-full overflow-hidden">
             <ul id="slider" class="flex w-full duration-700">
                 <li class="p-5">
+                    {{-- @foreach ($cars as $car) --}}
                     <div class="border rounded-lg p-5 h-full">
-                        <img class="h-50 w-full object-cover rounded-md" src="/img/nissan.jpg" alt="">
+                          {{-- @if($car->image) --}}
+                        <img class="h-50 w-full object-cover rounded-md" src="{{-- {{ asset('storage/' . $car->image) }} --}}" alt="">
+                        {{-- @endif --}}
                         <!-- Model Car -->
-                        <h5 class="mb-2 mt-2 text-2xl font-bold tracking-tight text-gray-900">Skyline GT</h5>
+                        <h5 class="mb-2 mt-2 text-2xl font-bold tracking-tight text-gray-900">{{-- {{ $car->model }} --}}/h5>
                         <div class="gap-4 lg:grid lg:grid-cols-2">
                             <!-- Make Car-->
                             <div class="flex items-center">
@@ -162,7 +166,7 @@
                                 </div>
                                 <div class="m-2 text-[12px]">
                                     <p>MAKE</p>
-                                    <p class="font-semibold">NISSAN</p>
+                                    <p class="font-semibold">{{-- {{ $car->make->make_name }} --}}</p>
                                 </div>
                             </div>
                             <!-- Transmission -->
@@ -174,7 +178,7 @@
                                 </div>
                                 <div class="m-2 text-[12px]">
                                     <p>TRANSMISSION</p>
-                                    <p class="font-semibold">MATIC</p>
+                                    <p class="font-semibold">{{-- {{ $car->transmission }} --}}</p>
                                 </div>
                             </div>
                             <!-- Fuel -->
@@ -186,7 +190,7 @@
                                 </div>
                                 <div class="m-2 text-[12px]">
                                     <p>FUEL</p>
-                                    <p class="font-semibold">BENSIN</p>
+                                    <p class="font-semibold">{{-- {{ $car->fuel }} --}}</p>
                                 </div>
                             </div>
                             <!-- Price -->
@@ -198,13 +202,13 @@
                                 </div>
                                 <div class="m-2 text-[12px]">
                                     <p>PRICE</p>
-                                    <p class="font-semibold">150.000</p>
+                                    <p class="font-semibold">Rp. {{-- {{ $car->price }} --}}</p>
                                 </div>
                             </div>
                         </div>
                         <!-- Button Reservasi -->
                         <div class="mt-4 flex items-center justify-center">
-                            <a href="#" class="inline-flex items-center px-2 py-1 text-sm font-medium  text-white bg-primary rounded-full border-2 border-primary hover:bg-white hover:text-primary focus:z-10 focus:ring-2 focus:ring-primary focus:text-primary">
+                            <a href="/reservation" class="inline-flex items-center px-2 py-1 text-sm font-medium  text-white bg-primary rounded-full border-2 border-primary hover:bg-white hover:text-primary focus:z-10 focus:ring-2 focus:ring-primary focus:text-primary">
                                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2 " xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
                                     <path fill="white" d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
                                 </svg>
