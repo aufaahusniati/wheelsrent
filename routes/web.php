@@ -9,6 +9,7 @@ use App\Http\Controllers\DashboardCarController;
 use App\Http\Controllers\DashboardMakeController;
 use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\DashboardCustomerController;
+use App\Http\Controllers\DashboardNewsController;
 // use App\Http\Controllers\LiveSearchController;
 /*
 |--------------------------------------------------------------------------
@@ -70,7 +71,8 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('/dashboard/make', DashboardMakeController::class)->middleware('auth');
     Route::resource('/dashboard/car', DashboardCarController::class)->middleware('auth');
     Route::resource('/dashboard/reservation', ReservationController::class)->middleware('auth');
-    Route::resource('/dashboard/customer', DashboardCustomerController::class)->middleware('auth');
+    Route::resource('/dashboard/reservation', DashboardCustomerController::class)->middleware('auth');
+    Route::resource('/dashboard/news', DashboardNewsController::class)->middleware('auth');
 });
 
 Route::get('/dashboard/car/{id}/pdf', [DashboardCarController::class, 'generatePDF']);

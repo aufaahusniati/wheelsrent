@@ -97,7 +97,7 @@
 <!-- Cards Section End -->
 
 <!-- Tentang Kami Section Start -->
-<section id="about" class="pt-30  ">
+<section id="about" class="pt-32 ">
     <div class="container">
         <svg class="-mx-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#EEF5FF" fill-opacity="1" d="M0,224L26.7,213.3C53.3,203,107,181,160,176C213.3,171,267,181,320,186.7C373.3,192,427,192,480,165.3C533.3,139,587,85,640,101.3C693.3,117,747,203,800,245.3C853.3,288,907,288,960,240C1013.3,192,1067,96,1120,96C1173.3,96,1227,192,1280,234.7C1333.3,277,1387,267,1413,261.3L1440,256L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
@@ -227,6 +227,57 @@
     </div>
 </section>
 {{-- Top Cars End --}}
+
+{{-- News --}}
+<section id="news" class="pt-32 pb-6" >
+<div class="container">
+    <div class="flex-wrap items-center justify-center text-center pb-4">
+        <p class="text-gray-400 text-sm mb-2">NEWS CARS</p>
+        <div class="mb-4 border-orange-400 border-t-4 w-20 flex flex-wrap items-center justify-center  text-center mx-auto"></div>
+        <h1 class="font-black text-4xl mb-2">Explore the News Cars</h1>
+        <p class="text-base mb-4">news about cars today.</p>
+    </div>
+
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+    <div>
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <img class="rounded-t-lg" src="/img/nissan.jpg" alt="" />
+        <div class="p-5">  
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary">Noteworthy technology acquisitions 2021</h5>
+            
+            <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>       
+        </div>
+    </div>
+    </div>
+    <div>
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <img class="rounded-t-lg" src="/img/nissan.jpg" alt="" />
+        <div class="p-5">  
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary">Noteworthy technology acquisitions 2021</h5>
+            
+            <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>       
+        </div>
+    </div>
+    </div>
+    <div>
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <img class="rounded-t-lg" src="/img/nissan.jpg" alt="" />
+            <div class="p-5">  
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary">Noteworthy technology acquisitions 2021</h5>
+                
+                <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>       
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+
+        
+      
+    </div>
+</section>
+{{-- End News --}}
 
 <!-- testimoni -->
 <section id="testimoni" class="py-12 bg-slate-200">
