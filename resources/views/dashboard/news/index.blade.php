@@ -31,8 +31,8 @@
                     </svg>
             </button>
         <!-- Dropdown menu -->
-            <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+            <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                <ul class="py-2 text-sm text-gray-700 " aria-labelledby="dropdownDefaultButton">
                     <li>
                         <a href="#" class="block px-4 py-2 hover:bg-gray-100">Racent</a>
                     </li>
@@ -64,14 +64,14 @@
                 <ul class="p-3 space-y-3 text-sm text-gray-700" aria-labelledby="dropdownCheckboxButton">
                 <li>
                     <div class="flex items-center">
-                    <input id="checkbox-item-1" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                    <label for="checkbox-item-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Make</label>
+                    <input id="checkbox-item-1" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  focus:ring-2 ">
+                    <label for="checkbox-item-1" class="ms-2 text-sm font-medium text-gray-900 ">slug</label>
                     </div>
                 </li>
                 <li>
                     <div class="flex items-center">
-                        <input checked id="checkbox-item-2" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                        <label for="checkbox-item-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Model</label>
+                        <input checked id="checkbox-item-2" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2 ">
+                        <label for="checkbox-item-2" class="ms-2 text-sm font-medium text-gray-900 ">Title</label>
                     </div>
                 </li>
                 </ul>
@@ -88,20 +88,14 @@
                     id
                 </th>
                 <th scope="col" class="px-6 py-3 border-black border-2">
-                    Name Customer
+                    Title
                 </th>
                 <th scope="col" class="px-6 py-3 border-black border-2">
-                    Model
+                    Slug
                 </th>
                 <th scope="col" class="px-6 py-3 border-black border-2">
-                    Start Date
-                </th>
-                <th scope="col" class="px-6 py-3 border-black border-2">
-                    End Date
-                </th>
-                <th scope="col" class="px-6 py-3 text-center">
-                    Status
-                </th>               
+                    Action
+                </th>          
             </tr>
         </thead>
         {{-- End Head Table --}}
@@ -113,19 +107,22 @@
                     1
                 </th>
                 <td class="border-black border-2">
-                    David Pamungkas
+                    Noteworthy technology acquisitions 2021
                 </td>
                 <td class="border-black border-2">
-                    Honda Cr-v
+                    Here are the biggest enterprise technology acquisitions of 2021 so far,
                 </td>
                 <td class="border-black border-2">
-                    12-12-2023
-                </td>
-                <td class="border-black border-2">
-                    24-12-2023
-                </td>
-                <td class="border-black border-2 text-green-500">
-                    Active
+                    {{-- <form action="/dashboard/car/{{ $car->id }}" method="post"> --}}
+                        {{-- @method('delete')
+                        @csrf --}}
+                        <button onclick="return confirm('Are you sure?')" type="submit">
+                            <svg class="w-6 h-6 text-red-500 hover:text-red-800" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h16M7 8v8m4-8v8M7 1h4a1 1 0 0 1 1 1v3H6V2a1 1 0 0 1 1-1ZM3 5h12v13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5Z" />
+                            </svg>
+                        </button>
+                    {{-- </form> --}}
                 </td>
                 
             </tr>           
