@@ -34,7 +34,7 @@
 
                 {{-- Sort by --}}
                 <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
-                    class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-2 mx-3 mb-6 text-center inline-flex items-center"
+                    class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-2 mx-3 mb-6 mr-[100px] text-center inline-flex items-center"
                     type="button">
                     Sort by
                     <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -62,43 +62,8 @@
                 </div>
                 {{-- end sort by --}}
 
-                {{-- filter by --}}
-                <button id="dropdownCheckboxButton" data-dropdown-toggle="dropdownDefaultCheckbox"
-                    class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-2 mb-6 mr-[100px] text-center inline-flex items-center"
-                    type="button">
-                    <svg class="w-4 h-4 text-white mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="none" viewBox="0 0 20 18">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="m2.133 2.6 5.856 6.9L8 14l4 3 .011-7.5 5.856-6.9a1 1 0 0 0-.804-1.6H2.937a1 1 0 0 0-.804 1.6Z" />
-                    </svg>Filter by
-                    <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 10 6">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="m1 1 4 4 4-4" />
-                    </svg>
-                </button>
 
-                <!-- Dropdown menu -->
-                <div id="dropdownDefaultCheckbox"
-                    class="z-10 hidden w-48 bg-white divide-y divide-gray-100 rounded-lg shadow ">
-                    <ul class="p-3 space-y-3 text-sm text-gray-700" aria-labelledby="dropdownCheckboxButton">
-                        <li>
-                            <div class="flex items-center">
-                                <input id="checkbox-item-1" type="checkbox" value=""
-                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500">
-                                <label for="checkbox-item-1" class="ms-2 text-sm font-medium text-gray-900">Make</label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="flex items-center">
-                                <input checked id="checkbox-item-2" type="checkbox" value=""
-                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500">
-                                <label for="checkbox-item-2" class="ms-2 text-sm font-medium text-gray-900">Model</label>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                {{-- end filter by --}}
+
             </div>
         </div>
 
@@ -176,8 +141,8 @@
                                         <button onclick="return confirm('Are you sure?')" type="submit">
                                             <svg class="w-6 h-6 text-red-500 hover:text-red-800" aria-hidden="true"
                                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
-                                                <path stroke="currentColor" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2"
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="2"
                                                     d="M1 5h16M7 8v8m4-8v8M7 1h4a1 1 0 0 1 1 1v3H6V2a1 1 0 0 1 1-1ZM3 5h12v13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5Z" />
                                             </svg>
                                         </button>
