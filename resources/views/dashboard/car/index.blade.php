@@ -15,7 +15,21 @@
 
             <div class="flex flex-wrap justify-end">
                 {{-- search --}}
-
+                <form>
+                    <label for="default-search" class="text-gray-900 sr-only">Search</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                            <svg class="w-3 h-3 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                            </svg>
+                        </div>
+                        <input type="search" id="live-search"
+                            class="block w-60 h-9 ps-10 text-sm text-gray-900 border border-gray-500 rounded-xl bg-gray-50"
+                            placeholder="Search..." required>
+                    </div>
+                </form>
                 {{-- end search --}}
 
                 {{-- Sort by --}}
@@ -83,12 +97,7 @@
 
                 {{-- Isi table --}}
                 <tbody class="bg-white">
-                    <div class="mb-4 mt-2">
-                        <label for="liveSearch" class="text-gray-900 sr-only">Live Search</label>
-                        <input type="text" id="liveSearch"
-                            class="block w-60 h-9 ps-10 text-sm text-gray-900 border border-gray-500 rounded-xl bg-gray-50"
-                            placeholder="Search...">
-                    </div>
+
                     @foreach ($cars as $car)
                         <tr class="bg-white text-center text-sm border-b-2 border-black border car-row">
                             <td scope="row" class="text-gray-900 whitespace-nowrap">
@@ -149,7 +158,7 @@
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const liveSearchInput = document.getElementById('liveSearch');
+            const liveSearchInput = document.getElementById('live-search');
             const rows = document.querySelectorAll('.car-row');
 
             liveSearchInput.addEventListener('input', function() {
