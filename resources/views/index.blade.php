@@ -1,52 +1,23 @@
 @extends('layouts.main')
 
 @section('container')
+
 <!-- Hero Section Start -->
-<section id="home" class="pt-36">
-    <div class="container">
-        <div id="controls-carousel" class="relative w-full z-0" data-carousel="static">
-            <!-- Carousel wrapper -->
-            <div class="relative h-52 overflow-hidden rounded-lg md:h-96">
-                <!-- Slide 1 -->
-                <div class="flex flex-wrap duration-700 ease-in-out bg-white bg" data-carousel-item="active">
-                    <img src="/img/slide1.jpg" class="absolute block bg-opacity-10 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 " alt="...">
-                    <div class="absolute w-full self-center ml-[65px] lg:w-1/2">
-                        <h1 class="text-xs font-bold text-white lg:text-4xl">Get your best experience with WheelsRent</h1>
-                        <p class="text-xs mt-3 mb-5 mr-20 text-slate-300 leading-relaxed lg:text-lg">Providing the best transportation and solutions to meet your everyday mobility needs</p>
+<section id="home" class="bg-center bg-no-repeat bg-blend-multiply bg-cover" style="background-image: url('/img/hero.png')">
+    <div class="lg:grid lg:grid-cols-2 lg:gap-2">
+        <div class="px-4 text-left ml-10 py-40 lg:py-[232px] ">
+            <h1 class="mb-3 text-xl font-black tracking-tight leading-none text-dark md:text-xl lg:text-6xl">Get Your Best</h1>
+            <h1 class="mb-4 text-xl font-black tracking-tight leading-none text-dark md:text-xl lg:text-6xl">Experience with</h1>
+            <h1 class="mb-4 text-xl font-black tracking-tight leading-none text-dark md:text-xl lg:text-6xl">WheelsRent</h1>
+                <p class=" text-sm text-gray-400 lg:text-lg">Providing the best transportation and solutions to </p>
+                <p class="mb-8 text-sm text-gray-400 lg:text-lg">meet your everyday mobility needs</p>
 
-                        <a href="/reservation/create" class="text-xs font-semibold text-white bg-primary py-[8px] px-[15px] rounded-full hover:bg-white hover:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8 ">Reservation</a>
-                    </div>
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="flex flex-wrap duration-700 ease-in-out bg-white" data-carousel-item>
-                    <img src="/img/slide2.jpg" class="absolute block w-full bg-opacity-10 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    <div class="absolute w-full self-center ml-[65px] lg:w-1/2">
-                        <h1 class="text-xs font-bold text-white lg:text-4xl">Car Rental Services in Bandung</h1>
-                        <p class="text-xs mt-2 mb-3 mr-[80px] text-slate-300 leading-relaxed lg:text-lg">WheelsRent is a company engaged in rental services tailored to customer needs.</p>
-
-                        <a href="#" class="text-xs font-semibold text-white bg-primary py-[5px] px-[15px] rounded-full hover:bg-white hover:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8">Prices</a>
-                    </div>
-                </div>
+                <a href="/reservation/create" class="text-xs font-semibold text-white bg-primary py-[8px] px-[15px] rounded-full hover:bg-white hover:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8 ">Reservation</a>
+        </div>
+        <div class="-translate-y-60 mt-28 px-20 lg:mt-40 lg:px-20">
+            <div class=" bg-primary lg:pt-40 flex justify-center lg:mt-44 lg:h-[500px] rounded-3xl">
+                <img src="/img/jumbo.png" class="car-img mr-40 lg:mr-40  lg:w-[600px] lg:h-[300px]" alt="">
             </div>
-
-            <!-- Slider controls -->
-            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
-                    </svg>
-                    <span class="sr-only">Previous</span>
-                </span>
-            </button>
-            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
-                    </svg>
-                    <span class="sr-only">Next</span>
-                </span>
-            </button>
         </div>
     </div>
 </section>
