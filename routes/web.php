@@ -1,15 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\NewsController;
 use Laravel\Socialite\Facades\Socialite;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\DashboardCarController;
 use App\Http\Controllers\DashboardMakeController;
-use App\Http\Controllers\ReservationController;
-use App\Http\Controllers\DashboardCustomerController;
 use App\Http\Controllers\DashboardNewsController;
+use App\Http\Controllers\DashboardCustomerController;
 // use App\Http\Controllers\LiveSearchController;
 /*
 |--------------------------------------------------------------------------
@@ -42,7 +43,7 @@ Route::get('/reservation', function () {
 });
 
 // Login Group
-Route::group(['middleware' => 'guest'] , function () {
+Route::group(['middleware' => 'guest'], function () {
     // Login
     Route::get('/login', [LoginController::class, 'index']);
     Route::post('/login', [LoginController::class, 'authenticate']);
@@ -78,3 +79,7 @@ Route::resource('/reservation', ReservationController::class);
 
 Route::get('/dashboard/car/{id}/pdf', [DashboardCarController::class, 'generatePDF']);
 Route::get('/dashboard/car', [DashboardCarController::class, 'index'])->name('cars.index');
+
+//news Api
+Route::get('/news', [NewsController::class, 'index']);
+Route::get('/fetch-news', [NewsController::class, 'fetchNews']);
