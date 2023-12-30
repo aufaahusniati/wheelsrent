@@ -9,7 +9,11 @@
 
             <div class="bg-white mx-5 my-5 rounded-xl -mt-6">
                 <div class="flex flex-wrap items-start">
-                    <img src="{{ asset('storage/' . $car->image) }}" alt="" class="w-40 h-40 mt-14 ml-9 mb-5">
+                    @if($car->image)
+                        <img src="{{ asset('storage/' . $car->image) }}" alt="" class="w-40 h-40 mt-14 ml-9 mb-5">
+                    @else
+                        <img src="/img/seeder.png" alt="" class="w-40 h-40 mt-14 ml-9 mb-5">
+                    @endif
                     <ul class=" ml-9 mt-5 text-lg">
                         <li class="mb-5">
                             <span class="font-bold">Make</span>

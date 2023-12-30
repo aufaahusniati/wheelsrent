@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('transmission');
             $table->string('fuel');
             $table->string('price');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
