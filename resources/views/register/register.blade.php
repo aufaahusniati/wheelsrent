@@ -51,7 +51,7 @@
                              <!-- Button Login with Google -->
                             <button onclick="window.location.href='{{ route('google.login') }}'" type="submit" class="flex items-start justify-center w-full text-primary bg-white font-bold hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5">
                                 <img src="/img/google.png" class="w-5 h-5" alt="">
-                              Login with Google
+                              Register with Google
                             </button>
                             <p class="text-sm font-light text-dark">Do not have an account? 
                                 <a href="/login" class="font-bold text-primary-600 text-blue-700 hover:underline">Login here</a>

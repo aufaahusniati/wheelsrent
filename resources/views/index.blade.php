@@ -240,7 +240,7 @@
 
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
     <div>
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
             <img class="rounded-t-lg" src="/img/nissan.jpg" alt="" />
         <div class="p-5">  
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary">Noteworthy technology acquisitions 2021</h5>
@@ -250,7 +250,7 @@
     </div>
     </div>
     <div>
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
             <img class="rounded-t-lg" src="/img/nissan.jpg" alt="" />
         <div class="p-5">  
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary">Noteworthy technology acquisitions 2021</h5>
@@ -260,7 +260,7 @@
     </div>
     </div>
     <div>
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
                 <img class="rounded-t-lg" src="/img/nissan.jpg" alt="" />
             <div class="p-5">  
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-primary">Noteworthy technology acquisitions 2021</h5>
