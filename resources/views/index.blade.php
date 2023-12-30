@@ -12,7 +12,7 @@
                 <p class=" text-sm text-gray-400 lg:text-lg">Providing the best transportation and solutions to </p>
                 <p class="mb-8 text-sm text-gray-400 lg:text-lg">meet your everyday mobility needs</p>
 
-                <a href="/reservation/create" class="text-xs font-semibold text-white bg-primary py-[8px] px-[15px] rounded-full hover:bg-white hover:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8 ">Reservation</a>
+                <a href="/reservation/create" class="text-xs font-semibold text-white bg-primary py-[8px] px-[15px] rounded-full border-2 border-primary hover:bg-white hover:text-primary focus:z-10 focus:ring-2 focus:ring-primary focus:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8 ">Reservation</a>
         </div>
         <div class="-translate-y-60 mt-28 px-20 lg:mt-40 lg:px-20">
             <div class=" bg-primary lg:pt-40 flex justify-center lg:mt-44 lg:h-[500px] rounded-3xl">
@@ -85,12 +85,12 @@
                     With an extensive network of locations, WheelsRent is present to make car rental convenient at various strategic spots.
                     Customer safety and comfort are WheelsRent's top priorities, ensuring well-maintained and safe vehicles for every trip.</p>
 
-                <a href="/about" class="ml-4 text-xs font-semibold py-[4px] px-[10px] text-white bg-primary rounded-full border-2 border-primary hover:bg-white hover:text-primary focus:z-10 focus:ring-2 focus:ring-primary focus:text-primary lg:text-base lg:py-2 lg:px-8">Read more</a>
+                <a href="/about_us" class="ml-4 text-xs font-semibold  py-[4px] px-[10px] text-white bg-primary rounded-full border-2 border-primary hover:bg-white hover:text-primary focus:z-10 focus:ring-2 focus:ring-primary focus:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8">Read more</a>
             </div>
 
         </div>
         <div>
-            <svg class="-mx-4 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <svg class="-mx-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#EEF5FF" fill-opacity="1" d="M0,128L26.7,138.7C53.3,149,107,171,160,160C213.3,149,267,107,320,101.3C373.3,96,427,128,480,170.7C533.3,213,587,267,640,288C693.3,309,747,299,800,288C853.3,277,907,267,960,272C1013.3,277,1067,299,1120,277.3C1173.3,256,1227,192,1280,149.3C1333.3,107,1387,85,1413,74.7L1440,64L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path>
             </svg>
         </div>
@@ -175,9 +175,9 @@
                         </div>
                         <!-- Button Reservasi -->
                         <div class="mt-4 flex items-center justify-center">
-                            <a href="#" class="inline-flex items-center px-2 py-1 text-sm font-medium  text-white bg-primary rounded-full border-2 border-primary hover:bg-white hover:text-primary focus:z-10 focus:ring-2 focus:ring-primary focus:text-primary">
-                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2 " xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
-                                    <path fill="white" d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                            <a href="/reservation/create" class="inline-flex items-center px-2 py-1 text-sm font-medium  text-white bg-primary rounded-full border-2 border-primary hover:bg-white hover:text-primary focus:z-10 focus:ring-2 focus:ring-primary focus:text-primary transition duration-300 ease-in-out">
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2 fill-current"  xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+                                    <path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
                                 </svg>
                                 <p class="px-2">Reservation</p>
                             </a>

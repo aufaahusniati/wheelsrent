@@ -88,6 +88,9 @@
                     id
                 </th>
                 <th scope="col" class="px-6 py-3 border-black border-2">
+                    Image
+                </th>
+                <th scope="col" class="px-6 py-3 border-black border-2">
                     Title
                 </th>
                 <th scope="col" class="px-6 py-3 border-black border-2">
@@ -106,6 +109,9 @@
                 <th scope="row" class="text-gray-900 whitespace-nowrap ">
                     1
                 </th>
+                <td class="border-black border-2">
+                    
+                </td>
                 <td class="border-black border-2">
                     Noteworthy technology acquisitions 2021
                 </td>
