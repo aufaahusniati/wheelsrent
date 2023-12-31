@@ -1,9 +1,10 @@
 @extends('dashboard.layouts.main')
 
 @section('container')
-    <div class="bg-primary h-auto bg-opacity-20 mt-14 rounded-xl ">
-        <div class="flex items-center justify-between py-10 mt-5 px-10">
-            <h1 class="font-poppins text-3xl font-semibold">Data Cars</h1>
+
+    <div class="bg-primary bg-opacity-20 mb-3 mt-10 rounded-xl">
+        <div class="flex items-center justify-between ">
+            <h1 class="py-5 px-10 text-3xl font-semibold">Data Cars</h1>
         </div>
         <div class="flex flex-wrap justify-between">
             <a href="/dashboard/car/create">

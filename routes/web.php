@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Car;
+use App\Models\Make;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NewsController;
 use Laravel\Socialite\Facades\Socialite;
@@ -24,12 +26,19 @@ use App\Http\Controllers\DashboardCustomerController;
 */
 // Home
 Route::get('/', function () {
-    return view('index');
+    return view('index', [
+        'cars' => Car::all(),
+        'makes' => Make::all()
+    ]);
 });
 
 // Type Car
 Route::get('/type_car', function () {
-    return view('type_car');
+    return view('type_car', [
+        'cars' => Car::all(),
+        'makes' => Make::all()
+    ]);
+    
 });
 
 // About us
@@ -56,7 +65,7 @@ Route::group(['middleware' => 'guest'], function () {
 Route::post('/logout', [LoginController::class, 'logout']);
 
 
-//Auth Google
+// Auth Google
 Route::get('/auth/google', [GoogleController::class, 'redirectToGoogle'])->name('google.login');
 Route::get('/auth/google/call-back', [GoogleController::class, 'handleGoogleCallback']);
 // Register Login 
@@ -77,6 +86,7 @@ Route::middleware(['auth'])->group(function () {
 
 Route::resource('/reservation', ReservationController::class);
 
+// PDF Report
 Route::get('/dashboard/car/{id}/pdf', [DashboardCarController::class, 'generatePDF']);
 Route::get('/dashboard/car', [DashboardCarController::class, 'index'])->name('cars.index');
 

@@ -67,7 +67,7 @@ class DashboardCarController extends Controller
             'transmission' => 'required|max:255',
             'fuel' => 'required|max:255',
             'price' => 'required',
-            'image' => 'image|file|max:1024',
+            'image' => 'image|file|max:2048',
             'make_id' => 'required',
         ]);
 
