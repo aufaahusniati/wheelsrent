@@ -19,10 +19,13 @@
                             <a href="/" class="text-base font-bold text-dark decoration-dark py-2 mx-8 flex group-hover:text-primary">Home</a>
                         </li>
                         <li class="group">
-                            <a href="/about_us" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary">About Us</a>
+                            <a href="#about" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary">About Us</a>
                         </li>
                         <li class="group">
                             <a href="/type_car" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary">Type Car</a>
+                        </li>
+                        <li class="group">
+                            <a href="#news" class="text-base font-bold text-dark py-2 mx-8 flex group-hover:text-primary">News</a>
                         </li>
                         <ul class="group my-1 mx-10 lg:my-0 lg:mx-4">
                             <a href="https://web.whatsapp.com/" target="_blank">

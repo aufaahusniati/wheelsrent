@@ -3,7 +3,7 @@
 @section('container')
 
     <div class="bg-primary bg-opacity-20 mb-3 mt-10 rounded-xl">
-        <div class="flex items-center justify-between ">
+        <div class="flex items-center justify-between">
             <h1 class="py-5 px-10 text-3xl font-semibold">Cars Make</h1>
         </div>
         <div class="flex flex-wrap justify-between pr-20 pb-4">

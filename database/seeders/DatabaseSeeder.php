@@ -52,7 +52,7 @@ class DatabaseSeeder extends Seeder
             'year' => '2024',
             'fuel' => 'Reguler',
             'transmission' => 'Manual 6-spd',
-            'price' => '350000',
+            'price' => '35000',
             
             
         ]);
@@ -62,16 +62,16 @@ class DatabaseSeeder extends Seeder
             'year' => '2024',
             'fuel' => 'Premium',
             'transmission' => 'Automatic(S8)',
-            'price' => '400000',
+            'price' => '40000',
             
         ]);
         Car::create([
             'make_id'=> '1',
             'model' => 'Civic 5Dr',
             'year' => '2024',
-            'fuel' => 'Regular Gasoline',
+            'fuel' => 'Gasoline',
             'transmission' => 'Manual 6-spd',
-            'price' => '300000',
+            'price' => '30000',
             
         ]);
 
@@ -81,7 +81,7 @@ class DatabaseSeeder extends Seeder
             'end_date'=> '2023/12/16',
             'email' => 'jungkook@gmailcom',
             'name'=> 'Jungkook',
-            'address' => 'jl.Korea',
+            'address' => 'Jl. Cibunti',
             'phone' => '82114667651'
         ]);
         Reservation::create([
@@ -89,8 +89,8 @@ class DatabaseSeeder extends Seeder
             'start_date'=> '2023/12/20',
             'end_date'=> '2023/12/23',
             'email' => 'dapu@gmailcom',
-            'name'=> 'Dapu',
-            'address' => 'jl.Bandung',
+            'name'=> 'Jaehyun',
+            'address' => 'Jl. Cimahi',
             'phone' => '82122345762'
         ]);
     }
