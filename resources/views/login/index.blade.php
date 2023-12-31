@@ -1,7 +1,7 @@
 @extends('layouts.mainlogin')
 
 @section('container')
-    <section class="pt-2">
+    <section class="pt-2 pb-16">
         <div class="container">
             <div class="w-full lg:grid lg:grid-cols-2 lg:gap-2">
                 <div class="flex flex-col items-center justify-center">

@@ -11,24 +11,22 @@
 <!-- Hero Section End -->
 
 {{-- Our Story --}}
-<section class="pt-32 w-full bg-[#EEF5FF]  ">
+<section class="pt-20 w-full bg-[#EEF5FF]  ">
     <div class="container">
-        <div>
-            <div class="flex-wrap items-center justify-center text-center">
-                <h1 class="font-black text-5xl mb-5">Our story ‍so far</h1>
-            </div>
+        <div class="flex-wrap items-center justify-center text-center">
+            <h1 class="font-black text-5xl mb-8">Our story ‍so far</h1>
         </div>
         <div class="gap-2 mx-auto lg:grid lg:grid-cols-2 pt-8 mb-4 bg-[#EEF5FF]">
             <div>
-                <img class="h-auto max-w-full rounded-lg shadow-md shadow-gray-600" src="/img/story_rent.jpg" alt="">
+                <img class="h-[350px] ml-10 max-w-full rounded-lg shadow-md shadow-gray-600" src="/img/story_rent.jpg" alt="">
             </div>
-            <div class="ml-5 mt-7">
+            <div class="ml-5">
                 <h1 class="text-xl uppercase font-extrabold text-primary lg:text-4xl text-center mb-2">History of WheelsRent</h1>
                 <div class="mb-4 border-orange-400 border-t-4 w-52 lg:w-96 flex flex-wrap items-center justify-center  text-center mx-auto"></div>
                 <p class="text-xs mt-5 mb-7 text-dark lg:text-lg mx-4">Wheelsrent was founded in 2023, We see that this business opportunity is very good and supports the tourism programme in Bandung where we started this business,
                     from a loan unit to finally develop into a company that has an additional number of other businesses that support it.
                 </p>
-                <p class="text-xs mt-3 text-dark lg:text-lg mx-4">Our hope is to provide the best service with a hard work ethic that we instil into our team and staff in the line of
+                <p class="text-xs mt-3 mb-12 text-dark lg:text-lg mx-4">Our hope is to provide the best service with a hard work ethic that we instil into our team and staff in the line of
                     needs for rental units ranging from family vehicle segments, operational vehicles to luxury vehicles.
                 </p>
             </div>
@@ -48,7 +46,7 @@
                 <img class="h-auto max-w-xs rounded-2xl" src="/img/aufaa.jpg" alt="">
                 <h1 class="font-black text-2xl mt-2">Aufaa Husniati</h1>
                 <h4 class="italic-h4 text-gray-400">Project Manager</h4>
-                <p class="text-gray-600 mb-2">Full-Stack Developer</p>
+                    <p class="text-gray-600 mb-2">Full-Stack Developer</p>
                 <div class="flex justify-center">
                     <a href="https://github.com/aufaahusniati" target="_blank">
                         <svg class="w-6 h-6 mr-4 text-gray-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -67,7 +65,7 @@
                     <img class="h-auto max-w-xs rounded-2xl" src="/img/indri.jpg" alt="">
                     <h1 class="font-black text-2xl mt-2">Widya Dwi Indrianti</h1>
                     <h4 class="italic-h4 text-gray-400">Team</h4>
-                    <p class="text-gray-600 mb-2">Front-End Developer</p>
+                        <p class="text-gray-600 mb-2">Front-End Developer</p>
                     <div class="flex justify-center">
                         <a href="https://github.com/indrianti10" target="_blank">
                             <svg class="w-6 h-6 mr-4 text-gray-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -85,7 +83,7 @@
                     <img class="h-auto max-w-xs rounded-2xl" src="/img/daffa.jpg" alt="">
                     <h1 class="font-black text-2xl mt-2">Daffa Gimmnastiar</h1>
                     <h4 class="italic-h4 text-gray-400">Team</h4>
-                    <p  class="text-gray-600 mb-2">Front-End Developer</p>
+                        <p  class="text-gray-600 mb-2">Front-End Developer</p>
                     <div class="flex justify-center">
                         <a href="https://github.com/daffagimnastiar" target="_blank">
                             <svg class="w-6 h-6 mr-4 text-gray-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -103,7 +101,7 @@
                     <img class="h-auto max-w-xs rounded-2xl" src="/img/wildan.jpg" alt="">
                     <h1 class="font-black text-2xl mt-2">Wildan Nasrulloh. R</h1>
                     <h4 class="italic-h4 text-gray-400">Team</h4>
-                    <p  class="text-gray-600 mb-2">Back-End Developer</p>
+                        <p  class="text-gray-600 mb-2">Back-End Developer</p>
                     <div class="flex justify-center">
                         <a href="https://github.com/wilrel" target="_blank">
                             <svg class="w-6 h-6 mr-4 text-gray-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
