@@ -15,13 +15,11 @@
                 <p class=" text-sm text-gray-400 lg:text-lg">Providing the best transportation and solutions to </p>
                 <p class="mb-8 text-sm text-gray-400 lg:text-lg">meet your everyday mobility needs</p>
 
-                <a href="/reservation/create"
-                    class="text-xs font-semibold text-white bg-primary py-[8px] px-[15px] rounded-full hover:bg-white hover:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8 ">Reservation</a>
-            </div>
-            <div class="-translate-y-60 mt-28 px-20 lg:mt-40 lg:px-20">
-                <div class=" bg-primary lg:pt-40 flex justify-center lg:mt-44 lg:h-[500px] rounded-3xl">
-                    <img src="/img/jumbo.png" class="car-img mr-40 lg:mr-40  lg:w-[600px] lg:h-[300px]" alt="">
-                </div>
+                <a href="/reservation/create" class="text-xs font-semibold text-white bg-primary py-[8px] px-[15px] rounded-full border-2 border-primary hover:bg-white hover:text-primary focus:z-10 focus:ring-2 focus:ring-primary focus:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8 ">Reservation</a>
+        </div>
+        <div class="-translate-y-60 mt-28 px-20 lg:mt-40 lg:px-20">
+            <div class=" bg-primary lg:pt-40 flex justify-center lg:mt-44 lg:h-[500px] rounded-3xl">
+                <img src="/img/jumbo.png" class="car-img mr-40 lg:mr-40  lg:w-[600px] lg:h-[300px]" alt="">
             </div>
         </div>
     </section>
@@ -97,37 +95,36 @@
                 <img class="h-auto max-w-full rounded-lg" src="/img/tentangkami.png" alt="">
                 <div>
                     <p class="text-center text-slate-400">about</p>
-                    <div
-                        class="mb-4 border-orange-400 border-t-4 w-10 flex flex-wrap items-center justify-center  text-center mx-auto">
-                    </div>
+                    <div class="mb-4 border-orange-400 border-t-4 w-10 flex flex-wrap items-center justify-center  text-center mx-auto"></div>
                     <h1 class="text-xl uppercase font-extrabold text-primary lg:text-4xl text-center mb-2">WheelsRent</h1>
-                    <p class="text-xs mt-3 mb-4 text-dark lg:text-lg mx-4">WheelsRent is a car rental company that offers a
-                        variety of vehicle options for your travel needs.
-                        With WheelsRent, you can choose from a range of modern and high-quality car models to suit your
-                        journey.
-                        WheelsRent's friendly and professional customer service is ready to assist you in the booking and
-                        rental process.
-                        With an extensive network of locations, WheelsRent is present to make car rental convenient at
-                        various strategic spots.
-                        Customer safety and comfort are WheelsRent's top priorities, ensuring well-maintained and safe
-                        vehicles for every trip.</p>
+                      <p class="text-xs mt-3 mb-4 text-dark lg:text-lg mx-4">WheelsRent is a car rental company that offers a
+                          variety of vehicle options for your travel needs. With WheelsRent, you can choose from a range of modern and high-quality car models to suit your
+                          journey. WheelsRent's friendly and professional customer service is ready to assist you in the booking and rental process. With an extensive network of locations, WheelsRent is present to make car rental convenient at
+                          various strategic spots. Customer safety and comfort are WheelsRent's top priorities, ensuring well-maintained and safe vehicles for every trip.
+                          </p>
 
-                    <a href="/about"
-                        class="ml-4 text-xs font-semibold py-[4px] px-[10px] text-white bg-primary rounded-full border-2 border-primary hover:bg-white hover:text-primary focus:z-10 focus:ring-2 focus:ring-primary focus:text-primary lg:text-base lg:py-2 lg:px-8">Read
-                        more</a>
-                </div>
 
-            </div>
-            <div>
-                <svg class="-mx-4 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path fill="#EEF5FF" fill-opacity="1"
-                        d="M0,128L26.7,138.7C53.3,149,107,171,160,160C213.3,149,267,107,320,101.3C373.3,96,427,128,480,170.7C533.3,213,587,267,640,288C693.3,309,747,299,800,288C853.3,277,907,267,960,272C1013.3,277,1067,299,1120,277.3C1173.3,256,1227,192,1280,149.3C1333.3,107,1387,85,1413,74.7L1440,64L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
-                    </path>
-                </svg>
-            </div>
-        </div>
-    </section>
-    <!-- Tentang Kami Section End -->
+                  <a href="/about_us" class="ml-4 text-xs font-semibold  py-[4px] px-[10px] text-white bg-primary rounded-full border-2 border-primary hover:bg-white hover:text-primary focus:z-10 focus:ring-2 focus:ring-primary focus:text-primary transition duration-300 ease-in-out lg:text-base lg:py-2 lg:px-8">Read more</a>
+              </div>
+
+              </div>
+              <div>
+                  <svg class="-mx-4 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                      <path fill="#EEF5FF" fill-opacity="1"
+                          d="M0,128L26.7,138.7C53.3,149,107,171,160,160C213.3,149,267,107,320,101.3C373.3,96,427,128,480,170.7C533.3,213,587,267,640,288C693.3,309,747,299,800,288C853.3,277,907,267,960,272C1013.3,277,1067,299,1120,277.3C1173.3,256,1227,192,1280,149.3C1333.3,107,1387,85,1413,74.7L1440,64L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
+                      </path>
+                  </svg>
+              </div>
+          </div>
+
+          <div>
+              <svg class="-mx-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                  <path fill="#EEF5FF" fill-opacity="1" d="M0,128L26.7,138.7C53.3,149,107,171,160,160C213.3,149,267,107,320,101.3C373.3,96,427,128,480,170.7C533.3,213,587,267,640,288C693.3,309,747,299,800,288C853.3,277,907,267,960,272C1013.3,277,1067,299,1120,277.3C1173.3,256,1227,192,1280,149.3C1333.3,107,1387,85,1413,74.7L1440,64L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path>
+              </svg>
+          </div>
+      </div>
+  </section>
+  <!-- Tentang Kami Section End -->
 
     {{-- Top Cars Start --}}
     <section id="top" class="pt-36">
@@ -233,19 +230,27 @@
                                 </a>
                             </div>
                         </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="w-2/12 flex items-center">
-                <div class="w-full">
-                    <button onclick="prev()" class="p-3 rounded-full bg-white border border-gray-100 shadow-lg ml-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                        </svg>
-                    </button>
-                </div>
+
+                        <!-- Button Reservasi -->
+                        <div class="mt-4 flex items-center justify-center">
+                            <a href="/reservation/create" class="inline-flex items-center px-2 py-1 text-sm font-medium  text-white bg-primary rounded-full border-2 border-primary hover:bg-white hover:text-primary focus:z-10 focus:ring-2 focus:ring-primary focus:text-primary transition duration-300 ease-in-out">
+                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2 fill-current"  xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+                                    <path d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                                </svg>
+                                <p class="px-2">Reservation</p>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="w-2/12 flex items-center">
+            <div class="w-full">
+                <button onclick="prev()" class="p-3 rounded-full bg-white border border-gray-100 shadow-lg ml-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                </button>
             </div>
         </div>
     </section>
@@ -264,18 +269,11 @@
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4" id="newsContainer">
-
-
-
             </div>
-
-
         </div>
-
-
-
         </div>
     </section>
+    
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             // Fetch data from Laravel backend
@@ -318,28 +316,20 @@
 
     <!-- testimoni -->
     <section id="testimoni" class="py-12 bg-slate-200">
-        <div
-            class="flex flex-wrap justify-center mx-10 text-center text-sm mt-6 bg-slate-100 shadow-md shadow-gray-400 rounded-md">
+        <div class="flex flex-wrap justify-center mx-10 text-center text-sm mt-6 bg-slate-100 shadow-md shadow-gray-400 rounded-md">
             <div class="container mx-auto py-8 px-4">
                 <div>
                     <p class="text-xs mb-2">TESTIMONIALS</p>
-                    <div
-                        class="mb-4 border-orange-400 border-t-4 w-20 flex flex-wrap items-center justify-center text-center mx-auto">
-                    </div>
-                    <h1 class="mb-4 text-2xl font-bold text-dark lg:text-3xl">Clients' Feedback
-                    </h1>
-                    <p class="mb-8 text-lg text-gray-500 lg:text-lg">You can leave a review about our service right in the
-                        wheelsrent </p>
+                    <div class="mb-4 border-orange-400 border-t-4 w-20 flex flex-wrap items-center justify-center text-center mx-auto"></div>
+                    <h1 class="mb-4 text-2xl font-bold text-dark lg:text-3xl">Clients' Feedback</h1>
+                      <p class="mb-8 text-lg text-gray-500 lg:text-lg">You can leave a review about our service right in the wheelsrent</p>
                 </div>
                 <div class="md:grid-cols-2 lg:grid-cols-4 gap-4">
                     <!-- testimoni 1 -->
                     <div style="margin-bottom: 3rem;">
                         <div class="flex items-center mb-2 text-yellow-300">
-                            <svg class="w-5 h-5 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="#FACA15" viewBox="0 0 22 20">
-                                <path
-                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z">
-                                </path>
+                            <svg class="w-5 h-5 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#FACA15" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"></path>
                             </svg>
                             <svg class="w-5 h-5 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="#FACA15" viewBox="0 0 22 20">
@@ -347,23 +337,14 @@
                                     d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z">
                                 </path>
                             </svg>
-                            <svg class="w-5 h-5 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="#FACA15" viewBox="0 0 22 20">
-                                <path
-                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z">
-                                </path>
+                            <svg class="w-5 h-5 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#FACA15" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"></path>
                             </svg>
-                            <svg class="w-5 h-5 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="#FACA15" viewBox="0 0 22 20">
-                                <path
-                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z">
-                                </path>
+                            <svg class="w-5 h-5 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#FACA15" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"></path>
                             </svg>
-                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#FACA15"
-                                viewBox="0 0 22 20">
-                                <path
-                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z">
-                                </path>
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#FACA15" viewBox="0 0 22 20">
+                                <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"></path>
                             </svg>
                         </div>
                         <p class="text-left text-sm font-semibold text-gray-900 lg:text-lg">
@@ -371,7 +352,7 @@
                             car and excellent condition make our trip was much more enjoyable."</p>
                         <figcaption class="flex items-center mt-2 space-x-3 rtl:space-x-reverse">
                             <div class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-300 ">
-                                <cite class="pe-3 font-medium text-gray-900">Wildan</cite>
+                                <cite class="pe-3 font-medium text-gray-900">Aufaah</cite>
                                 <cite class="ps-3 text-sm text-gray-500">Customer</cite>
                             </div>
                         </figcaption>
@@ -418,7 +399,7 @@
                             </p>
                             <figcaption class="flex items-center mt-2 space-x-3 rtl:space-x-reverse">
                                 <div class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-300">
-                                    <cite class="pe-3 font-medium text-gray-900">Indrih Widyah</cite>
+                                    <cite class="pe-3 font-medium text-gray-900">Indrih</cite>
                                     <cite class="ps-3 text-sm text-gray-500">Customer</cite>
                                 </div>
                             </figcaption>
@@ -464,7 +445,7 @@
                             prices. Very recommended for those who need quality car rental."</p>
                         <figcaption class="flex items-center mt-2 space-x-3 rtl:space-x-reverse">
                             <div class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-300">
-                                <cite class="pe-3 font-medium text-gray-900">Haekal Alvegian</cite>
+                                <cite class="pe-3 font-medium text-gray-900">Wildah</cite>
                                 <cite class="ps-3 text-sm text-gray-500">Customer</cite>
                             </div>
                         </figcaption>
@@ -510,7 +491,7 @@
                         </p>
                         <figcaption class="flex items-center mt-2 space-x-3 rtl:space-x-reverse">
                             <div class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-300">
-                                <cite class="pe-3 font-medium text-gray-900 ">Afandi Effendi</cite>
+                                <cite class="pe-3 font-medium text-gray-900 ">Daffah</cite>
                                 <cite class="ps-3 text-sm text-gray-500">Customer</cite>
                             </div>
                         </figcaption>
