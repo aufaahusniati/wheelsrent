@@ -13,7 +13,7 @@
             <div class="container">
                 <div class="flex-wrap items-center justify-center text-center">
                     <h1 class="font-black text-5xl mb-2">Explore the Cars</h1>
-                    <div class="mb-4 border-orange-400 border-t-4 w-20 flex flex-wrap items-center justify-center  text-center mx-auto"></div>
+                    <div class="mb-4 border-orange-400 border-t-4 w-10 flex flex-wrap items-center justify-center  text-center mx-auto"></div>
                     <p class="text-lg mb-4">WheelsRent have various car classes. Select your perfect fit on.</p>
                 </div>
             <div class="flex pl-10 md:pl-[180px] pt-3 lg:justify-end lg:pr-5">

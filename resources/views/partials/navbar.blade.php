@@ -60,7 +60,7 @@
                                     <li>
                                         <a href="/dashboard" class="drop block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">My Dashboard</a>
                                     </li>
-                                @endif
+                                    @endif
                                 </ul>
                                 <ul class="py-2" aria-labelledby="user-menu-button">
                                     <form action="/logout" method="post">

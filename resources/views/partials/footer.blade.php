@@ -12,13 +12,13 @@
                  <h3 class="mb-5 text-xl font-semibold text-white">Quick Link</h3>
                  <ul class="text-slate-300">
                      <li>
-                         <a href="/home" class="mb-3 inline-block text-base hover:text-primary">Home</a>
+                         <a href="/" class="mb-3 inline-block text-base hover:text-primary">Home</a>
                      </li>
                      <li>
-                         <a href="/about" class="mb-3 inline-block text-base hover:text-primary">About Us</a>
+                         <a href="/about_us" class="mb-3 inline-block text-base hover:text-primary">About Us</a>
                      </li>
                      <li>
-                         <a href="type" class="mb-3 inline-block text-base hover:text-primary">Type Car</a>
+                         <a href="/type_car" class="mb-3 inline-block text-base hover:text-primary">Type Car</a>
                      </li>
                  </ul>
              </div>
@@ -26,10 +26,10 @@
                  <h3 class="mb-5 text-xl font-semibold text-white">Info</h3>
                  <ul class="text-slate-300">
                      <li>
-                         <a href="/call" class="mb-3 inline-block text-base hover:text-primary">Call Center</a>
+                         <a href="https://web.whatsapp.com/" target="_blank" class="mb-3 inline-block text-base hover:text-primary">Call Center</a>
                      </li>
                      <li>
-                         <a href="/reservation" class="mb-3 inline-block text-base hover:text-primary">Reservation</a>
+                         <a href="/reservation/create" class="mb-3 inline-block text-base hover:text-primary">Reservation</a>
                      </li>
                  </ul>
              </div>

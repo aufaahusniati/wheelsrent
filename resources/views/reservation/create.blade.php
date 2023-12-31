@@ -26,7 +26,7 @@
                         
                         <div class="mb-5">
                             <label for="model" class="block mb-2 text-sm font-bold text-white">MODEL</label>
-                            <select id="car_id" name="car_id" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
+                            <select id="car_id" name="car_id" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" required>
                                 @foreach ( $cars as $car)
                                         <option disabled selected hidden>Select model</option>
                                         <option value="{{ $car->id }}">{{ $car->model }}</option>
@@ -42,7 +42,7 @@
                                     </svg>
                                 </div>
                                 <label for="date" class="block mb-2 text-sm font-bold text-white">START DATE</label>
-                                <input datepicker type="text" id="start_date" name="start_date" class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg block w-full ps-10 p-2.5" placeholder="Select Start Date">
+                                <input datepicker type="text" id="start_date" name="start_date" class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg block w-full ps-10 p-2.5" placeholder="Select Start Date" required>
                             </div>
                              {{-- end date --}}
                             <div class="relative mb-5 lg:max-w-sm">  
@@ -52,7 +52,7 @@
                                     </svg>
                                 </div>
                                 <label for="date" class="block mb-2 text-sm font-bold text-white">END DATE</label>
-                                <input datepicker type="text" id="end_date" name="end_date" class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg block w-full ps-10 p-2.5" placeholder="Select End Date">
+                                <input datepicker type="text" id="end_date" name="end_date" class="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg block w-full ps-10 p-2.5" placeholder="Select End Date" required>
                             </div>
                         </div>
 
@@ -62,17 +62,17 @@
                              {{-- email --}}
                             <div class="mb-5">
                                 <label for="email" class="block mb-2 text-sm font-bold text-white">EMAIL</label>
-                                <input type="text" id="email" name="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="input Your Email">
+                                <input type="text" id="email" name="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="input Your Email" required>
                             </div>
                             {{-- name --}}
                             <div class="mb-5">
                                 <label for="name" class="block mb-2 text-sm font-bold text-white">NAME</label>
-                                <input type="text" id="name" name="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="input Your Full Name">
+                                <input type="text" id="name" name="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="input Your Full Name" required>
                             </div>
                             {{-- address --}}
                             <div class="mb-5">
                                 <label for="address" class="block mb-2 text-sm font-bold text-white">ADDRESS</label>
-                                <input type="text" id="address" name="address" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="input Your Address">
+                                <input type="text" id="address" name="address" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="input Your Address" required>
                             </div>
                             {{-- phone --}}
                             <div class="mb-5 lg:max-w-sm">
@@ -89,33 +89,8 @@
                         </div>
                         {{-- button reservation --}}
                         <div class="flex flex-wrap items-center justify-center">
-                            <button type="submit" class="text-white font-bold bg-orange-500 hover:bg-orange-400 rounded-full text-sm px-40 py-2.5 lg:px-44 lg:py-2.5 mt-4 text-center me-2 mb-2 shadow">Reservation</button>
+                            <button  onclick="return confirm('Reservasi Successful!')" type="submit" class="text-white font-bold bg-orange-500 hover:bg-orange-400 rounded-full text-sm px-40 py-2.5 lg:px-44 lg:py-2.5 mt-4 text-center me-2 mb-2 shadow">Reservation</button>
                         </div>
-
-                        {{-- button Modal reservation --}}
-                        {{-- <div class="flex flex-wrap items-center justify-center">
-                            <button type="submit" data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="block text-white font-bold bg-orange-500 hover:bg-orange-400 rounded-full text-sm px-40 py-2.5 lg:px-44 lg:py-2.5 mt-4 text-center me-2 mb-2 shadow">
-                                Reservation
-                            </button>
-                            <div id="popup-modal" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-                                <div class="relative p-4 w-full max-w-md max-h-full">
-                                    <div class="relative bg-white rounded-lg shadow ">
-                                        <button type="button" class="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="popup-modal">
-                                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                                            </svg>
-                                            <span class="sr-only">Close modal</span>
-                                        </button>
-                                        <div class="p-4 md:p-5 text-center">
-                                            <h3 class="mb-5 text-lg font-normal text-gray-500 ">Reservation Successful!</h3>
-                                            <button data-modal-hide="popup-modal" type="button" class="text-white bg-green-500 hover:bg-green-700 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center me-2">
-                                                Download 
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> --}}
                     </form>
                 </div>  
               
