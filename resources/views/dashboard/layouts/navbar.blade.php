@@ -1,5 +1,5 @@
-<nav class="w-[calc(100%-256px)] mt-3 ml-64">
-    <div class="py-4 px-6 flex items-center justify-center">
+<nav class="w-[calc(100%-256px)] mt-6 ml-64">
+    <div class="flex items-center justify-center">
         <div class="translate-x-[260px]">
             <span class="text-black font-extrabold text-3xl mb-2">Wheelsrent's Dashboard</span>
             <div class="mt-2 border-primary border-t-4 w-40 flex flex-wrap items-center justify-center text-center mx-auto"></div>

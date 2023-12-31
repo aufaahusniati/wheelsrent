@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WheelsRent | Dashboard</title>
     <link rel="stylesheet" href="dist/output.css">
+    <link rel="icon" href="/img/logo_team.png">
 
     {{-- Font-Poppins --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">

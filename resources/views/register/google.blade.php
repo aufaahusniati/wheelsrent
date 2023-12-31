@@ -9,7 +9,7 @@
 @endif
 
 <section class="pt-2">
-    <div class="container">
+    <div class="container pb-16">
         <div class="w-full lg:grid lg:grid-cols-2 lg:gap-2">
             <div class="flex flex-col items-center justify-center">
                 <img src="/img/logo_team.png" class="w-[120px] lg:w-[250px] lg:mt-14" h-70 alt="">

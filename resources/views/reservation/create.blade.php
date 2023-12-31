@@ -89,7 +89,7 @@
                         </div>
                         {{-- button reservation --}}
                         <div class="flex flex-wrap items-center justify-center">
-                            <button  onclick="return confirm('Reservasi Successful!')" type="submit" class="text-white font-bold bg-orange-500 hover:bg-orange-400 rounded-full text-sm px-40 py-2.5 lg:px-44 lg:py-2.5 mt-4 text-center me-2 mb-2 shadow">Reservation</button>
+                            <button onclick="return confirm('Reservation Successful!')" type="submit" class="text-white font-bold bg-orange-500 hover:bg-orange-400 rounded-full text-sm px-40 py-2.5 lg:px-44 lg:py-2.5 mt-4 text-center me-2 mb-2 shadow">Reservation</button>
                         </div>
                     </form>
                 </div>  
